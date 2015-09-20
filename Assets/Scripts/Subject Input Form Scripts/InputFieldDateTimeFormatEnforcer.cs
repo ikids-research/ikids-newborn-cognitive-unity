@@ -11,6 +11,8 @@ public class InputFieldDateTimeFormatEnforcer : MonoBehaviour {
     public string cultureInfoString = "en-US";
     public System.Globalization.DateTimeStyles dateTimeStyles = System.Globalization.DateTimeStyles.None;
 
+    public bool defaultToCurrent = false;
+
     private bool valid = false;
 
 	// Use this for initialization
@@ -19,6 +21,11 @@ public class InputFieldDateTimeFormatEnforcer : MonoBehaviour {
         foreach (Transform child in transform)
             if (child.name == errorObjectName)
                 errorObject = child.gameObject;
+        if (defaultToCurrent)
+        {
+            System.DateTime currentDateTime = System.DateTime.Now;
+            inputText.text = currentDateTime.ToString(dateTimeFormat);
+        }
     }
 
     // Update is called once per frame
