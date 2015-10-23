@@ -38,38 +38,11 @@ public class JSONDataLoader : MonoBehaviour {
 
         //OPTIONAL INPUTS
 
-        //Attempt to load Title property if present
-        if (taskClass["Title"] == null)
-            Debug.LogWarning("Warning: No Title property set, defaulting to " + c.Title + " for value.");
-        else
-            c.Title = taskClass["Title"];
-
         //Attempt to load GlobalPauseEnabled property if present
         if (taskClass["GlobalPauseEnabled"] == null)
             Debug.LogWarning("Warning: No GlobalPauseEnabled property set, defaulting to " + c.GlobalPauseEnabled + " for value.");
         else
             c.GlobalPauseEnabled = taskClass["GlobalPauseEnabled"].AsBool;
-
-        //Attempt to load AutoFlushEnabled property if present
-        if (taskClass["AutoFlushEnabled"] == null)
-            Debug.LogWarning("Warning: No AutoFlushEnabled property set, defaulting to " + c.AutoFlushEnabled + " for value.");
-        else
-            c.AutoFlushEnabled = taskClass["AutoFlushEnabled"].AsBool;
-
-        //Attempt to load Resolution property if present
-        if (taskClass["Resolution"] == null)
-            Debug.LogWarning("Warning: No Resolution property set, defaulting to " + c.ScreenResolution.ToString() + " for value.");
-        else
-        {
-            Resolution r = new Resolution();
-            if (taskClass["Resolution"]["Width"] == null || taskClass["Resolution"]["Height"] == null)
-                Debug.LogWarning("Warning: Width and Height properties must be present for resolution and at least one is missing, Resolution is defaulting to " + c.ScreenResolution.ToString() + ".");
-            else
-            {
-                r.width = taskClass["Resolution"]["Width"].AsInt;
-                r.height = taskClass["Resolution"]["Height"].AsInt;
-            }
-        }
 
         return c;
     }
@@ -253,34 +226,15 @@ public class JSONDataLoader : MonoBehaviour {
     //Object for storing the configuration of the task (requires properly configured interfaces and task procedure to run)
     public class Configuration
     {
-        private string _title;
         private bool _globalPauseEnabled;
-        private bool _autoFlushEnabled;
-        private Resolution _screenResolution;
         private InterfaceConfiguration _interfaces;
         private TaskProcedure _taskProcedure;
 
         public Configuration(InterfaceConfiguration interfaces, TaskProcedure taskProcedure)
         {
-            Title = "Title";
             GlobalPauseEnabled = false;
-            AutoFlushEnabled = false;
-            ScreenResolution = Screen.currentResolution;
             _interfaces = interfaces;
             _taskProcedure = taskProcedure;
-        }
-
-        public string Title
-        {
-            get
-            {
-                return _title;
-            }
-
-            set
-            {
-                _title = value;
-            }
         }
 
         public bool GlobalPauseEnabled
@@ -293,31 +247,6 @@ public class JSONDataLoader : MonoBehaviour {
             set
             {
                 _globalPauseEnabled = value;
-            }
-        }
-
-        public bool AutoFlushEnabled
-        {
-            get
-            {
-                return _autoFlushEnabled;
-            }
-
-            set
-            {
-                _autoFlushEnabled = value;
-            }
-        }
-
-        public Resolution ScreenResolution
-        {
-            get
-            {
-                return _screenResolution;
-            }
-            set
-            {
-                _screenResolution = value;
             }
         }
 
@@ -548,6 +477,15 @@ public class JSONDataLoader : MonoBehaviour {
             }
         }
 
+        public void startFromBeginning()
+        {
+            foreach(Task t in _tasks)
+                t.setTaskState(false);
+            _index = 0;
+            _tasks[0].setTaskState(true);
+            _tasks[0].startConditionMonitoring();
+        }
+
         public void addTask(Task t)
         {
             _tasks.Add(t);
@@ -562,8 +500,25 @@ public class JSONDataLoader : MonoBehaviour {
         
         public bool nextTask()
         {
+            if(_index < _tasks.Count) _tasks[_index].setTaskState(false);
+            if (_index + 1 < _tasks.Count)
+            {
+                _tasks[_index + 1].setTaskState(true);
+                _tasks[_index + 1].startConditionMonitoring();
+            }
             _index = _index + 1;
             return _index < _tasks.Count;
+        }
+
+        public void setConditionStatus(string[] commands)
+        {
+            if (_index < _tasks.Count)
+                _tasks[_index].setConditionStatus(commands);
+        }
+
+        public bool procedureComplete()
+        {
+            return _index >= _tasks.Count;
         }
     }
 
@@ -595,12 +550,35 @@ public class JSONDataLoader : MonoBehaviour {
                 complete |= c.isConditionMet();
             return complete;
         }
+
+        public void setTaskState(bool active)
+        {
+            foreach(IStimuli s in _stateStimuli)
+            {
+                if (active)
+                    s.showStimuli();
+                else
+                    s.removeStimuli();
+            }
+        }
+
+        public void startConditionMonitoring()
+        {
+            foreach(ICondition c in _endConditions)
+                c.startConditionMonitoring();
+        }
+
+        public void setConditionStatus(string[] commands)
+        {
+            foreach (ICondition c in _endConditions)
+                c.setConditionStatus(commands);
+        }
     }
 
     public interface ICondition
     {
         void startConditionMonitoring();
-        void setConditionStatus(string command);
+        void setConditionStatus(string[] commands);
         bool isConditionMet();
     }
 
@@ -616,17 +594,17 @@ public class JSONDataLoader : MonoBehaviour {
 
         public void startConditionMonitoring()
         {
-            _startTime = Time.unscaledTime;
+            _startTime = Time.time;
         }
 
-        public void setConditionStatus(string command)
+        public void setConditionStatus(string[] commands)
         {
             //Do nothing because timeouts don't care about commands
         }
 
         public bool isConditionMet()
         {
-            return (Time.unscaledTime - _startTime) > _timeout;
+            return (Time.time - _startTime) > _timeout;
         }
     }
 
@@ -636,11 +614,11 @@ public class JSONDataLoader : MonoBehaviour {
         private bool _isMonitoring;
         private float _duration;
         private string _watchCommand;
-
         public CommandCondition(string command, int duration)
         {
             _watchCommand = command;
             _duration = duration;
+            _startTime = float.MaxValue;
         }
 
         public void startConditionMonitoring()
@@ -648,15 +626,28 @@ public class JSONDataLoader : MonoBehaviour {
             _isMonitoring = true;
         }
 
-        public void setConditionStatus(string command)
+        public void setConditionStatus(string[] commands)
         {
-            if (_isMonitoring && _watchCommand == command)
-                _startTime = Time.unscaledTime;
+            bool containsCommand = false;
+            for (int i = 0; i < commands.Length; i++)
+                if (commands[i] == _watchCommand)
+                {
+                    containsCommand = true;
+                    break;
+                }
+            if (_isMonitoring && containsCommand && _startTime == float.MaxValue)
+            {
+                _startTime = Time.time;
+            }
+            else if (_isMonitoring && !containsCommand)
+            {
+                _startTime = float.MaxValue;
+            }
         }
 
         public bool isConditionMet()
         {
-            return (Time.unscaledTime - _startTime) > _duration;
+            return _isMonitoring && ((Time.time - _startTime) > _duration);
         }
     }
 
@@ -678,10 +669,15 @@ public class JSONDataLoader : MonoBehaviour {
             string path = "file:///" + fullFileNameAndPathToImage.Replace('\\', '/');
             _loaderObject = new WWW(path);
             _renderObject = new GameObject();
-            _renderObject.transform.position = location;
+            _renderObject.transform.position = Camera.main.ScreenToWorldPoint(location);
+            _renderObject.transform.position = new Vector3(_renderObject.transform.position.x, _renderObject.transform.position.y, 0f);
             _renderer = _renderObject.AddComponent<SpriteRenderer>();
+            while (!_loaderObject.isDone)
+                Debug.Log("Loading visual asset " + path + " - " + _loaderObject.progress + "%");
+            Debug.Log("Done loading visual asset" + path + ".");
             _stimuli = _loaderObject.texture;
-            _renderer.sprite = Sprite.Create(_stimuli, new Rect(Vector2.zero, size), Vector2.zero);
+            _renderer.sprite = Sprite.Create(_stimuli, new Rect(0f, 0f, _loaderObject.texture.width, _loaderObject.texture.height), Vector2.zero);
+            _renderObject.transform.localScale = new Vector3(size.x / _loaderObject.texture.width, size.y / _loaderObject.texture.height, 0f);
         }
 
         public void showStimuli()
@@ -713,6 +709,9 @@ public class JSONDataLoader : MonoBehaviour {
             _audio.loop = loop;
             string path = "file:///" + fullFileNameAndPathToAudio.Replace('\\', '/');
             _loaderObject = new WWW(path);
+            while (!_loaderObject.isDone)
+                Debug.Log("Loading audio asset " + path + " - " + _loaderObject.progress + "%");
+            Debug.Log("Done loading audio asset" + path + ".");
             _audio.clip = _loaderObject.audioClip;
         }
 
