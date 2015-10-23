@@ -92,6 +92,7 @@ public class JSONDataLoader : MonoBehaviour {
             for(int i = 0; i < interfaces.Count; i++) { 
                 JSONNode iFace = interfaces[i];
                 string interfaceType = iFace["InterfaceType"];
+                int port = iFace["Port"].AsInt;
                 JSONArray keyMap = iFace["KeyMap"].AsArray;
                 List<string[]> map = getKeyMapStringArraysFromKeyMapJSON(keyMap);
                 switch (iFace["InterfaceType"])
@@ -104,6 +105,7 @@ public class JSONDataLoader : MonoBehaviour {
                         break;
                     case "TCP":
                         interfaceConfig.setTCPMap(map[0], map[1]);
+                        if (port != 0) interfaceConfig.setTCPPort(port);
                         break;
                 }
             }
@@ -287,6 +289,7 @@ public class JSONDataLoader : MonoBehaviour {
 
         private string[] _tcpKeys;
         private string[] _tcpCommands;
+        private int _tcpPort;
 
         private InterfaceType _masterInterface;
 
@@ -296,6 +299,7 @@ public class JSONDataLoader : MonoBehaviour {
             _xBoxControllerInterfacePresent = false;
             _tcpInterfacePresent = false;
             _masterInterface = InterfaceType.Keyboard;
+            _tcpPort = 11235;
         }
 
         public void setKeyboardMap(string[] keys, string[] commands)
@@ -335,6 +339,11 @@ public class JSONDataLoader : MonoBehaviour {
             _tcpInterfacePresent = true;
             _tcpKeys = keys;
             _tcpCommands = commands;
+        }
+
+        public void setTCPPort(int port)
+        {
+            _tcpPort = port;
         }
 
         public void setMaster(InterfaceType type)
@@ -453,6 +462,14 @@ public class JSONDataLoader : MonoBehaviour {
             get
             {
                 return _masterInterface;
+            }
+        }
+
+        public int TcpPort
+        {
+            get
+            {
+                return _tcpPort;
             }
         }
     }
@@ -647,7 +664,7 @@ public class JSONDataLoader : MonoBehaviour {
 
         public bool isConditionMet()
         {
-            return _isMonitoring && ((Time.time - _startTime) > _duration);
+            return _isMonitoring && ((Time.time - _startTime) >= _duration);
         }
     }
 

@@ -71,8 +71,8 @@ public class SystemStateMachine : MonoBehaviour {
                 bool moreTasksLeft = config.TaskProcedure.nextTask();
                 if (!moreTasksLeft)
                 {
+                    controller.safeShutdown();
                     Debug.Log("Done");
-                    //If we're done - do something
                 }
             }
         }

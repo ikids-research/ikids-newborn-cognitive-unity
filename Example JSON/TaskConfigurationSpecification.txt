@@ -1,0 +1,11 @@
+Notes on Task Configuration Specification
+
+-All times are in seconds
+-All filename/paths MUST be full <Drive>:\\\\<Path>\\<Filename>.<Extension> combinations
+-All coordinates (X, Y, Width, Height) are in pixel values and do NOT scale with resolution
+-All input interface keymap command names can be anything (but must be internally consistent in the task), but the key names (second part of the map) must be Unity input key strings
+-XBoxController button names are as follows: "a", "b", "x", "y", "left bumper", "right bumper", "back", "start", "left stick", "right stick"
+-XBoxController button names can be found here http://wiki.unity3d.com/index.php?title=Xbox360Controller , and are the names in the Input column (minus the words "Button" and "Click" with any leading or trailing white space trimmed off
+-All strings in JSON files must have escaped characters appropriately (path names, for instance, must be \\ instead of just \)
+-Use http://jsonlint.com/ for validating the JSON is correctly formatted
+-For boolean values, only "false" and "true" should be used - otherwise behavior is undefined
