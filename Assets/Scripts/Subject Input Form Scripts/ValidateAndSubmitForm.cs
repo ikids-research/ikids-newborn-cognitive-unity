@@ -19,10 +19,12 @@ public class ValidateAndSubmitForm : MonoBehaviour {
 
     public Dropdown conditionNumberDropdown;
     public Dropdown placeNumberDropdown;
+    public ConditionAndPlaceConfigurationLoader conditionAndPlaceConfigurationLoader;
 
     public string inputObjectName = "Text";
 
     public Vector3 punchRotationVector = new Vector3(10f, 10f, 10f);
+
     public float punchRotationDuration = 0.5f;
     public float resetTime = 0.25f;
 
@@ -38,7 +40,7 @@ public class ValidateAndSubmitForm : MonoBehaviour {
 
     public string genderPlayerPrefsString = "gender";
 
-    public string conditionNumberPlayerPrefsString = "conditionNumber";
+    public string conditionConfigurationFilenamePlayerPrefsString = "conditionNumber";
     public string placeNumberPlayerPrefsString = "placeNumber";
 
     public int transitionSceneNumber = 1;
@@ -104,8 +106,8 @@ public class ValidateAndSubmitForm : MonoBehaviour {
 
             PlayerPrefs.SetInt(genderPlayerPrefsString, genderDropdown.value);
 
-            PlayerPrefs.SetInt(conditionNumberPlayerPrefsString, conditionNumberDropdown.value);
-            PlayerPrefs.SetInt(placeNumberPlayerPrefsString, placeNumberDropdown.value);
+            PlayerPrefs.SetString(conditionConfigurationFilenamePlayerPrefsString, conditionAndPlaceConfigurationLoader.getSelectedCondition());
+            PlayerPrefs.SetInt(placeNumberPlayerPrefsString, conditionAndPlaceConfigurationLoader.getSelectedPlace());
 
             Application.LoadLevel(transitionSceneNumber);
         }

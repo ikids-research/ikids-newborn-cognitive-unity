@@ -5,9 +5,9 @@ using SimpleJSON;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class JSONDataLoader : MonoBehaviour {
-	
-    public static Configuration LoadDataFromJSON(string fullJSONFilePathAndName)
+public class JSONDataLoader : MonoBehaviour
+{
+    public static Configuration LoadTaskConfigurationDataFromJSON(string fullJSONFilePathAndName)
     {
         //Get the JSON contents from file
         string contents = getFileContents(fullJSONFilePathAndName);
@@ -16,7 +16,7 @@ public class JSONDataLoader : MonoBehaviour {
         JSONNode rootNode = JSONNode.Parse(contents);
         JSONClass rootClass = rootNode.AsObject;
         //Validate that the file is at least remotely formatted correctly by checking for the Task property (which contains everything)
-        if(rootClass["Task"]== null)
+        if (rootClass["Task"] == null)
         {
             Debug.LogError("Error: JSON does not include root Task object. See example JSON for help.");
             Application.Quit();
@@ -28,7 +28,7 @@ public class JSONDataLoader : MonoBehaviour {
         //REQUIRED INPUTS
 
         //Construct the interface configuration from the Task JSONClass
-        InterfaceConfiguration interfaceConfig = getInterfaceConfigurationFromJSON(taskClass); 
+        InterfaceConfiguration interfaceConfig = getInterfaceConfigurationFromJSON(taskClass);
 
         //Construct the task procedure from the Task JSON Class
         TaskProcedure taskProc = getTaskProcedureFromJSON(taskClass);
@@ -44,11 +44,32 @@ public class JSONDataLoader : MonoBehaviour {
         else
             c.GlobalPauseEnabled = taskClass["GlobalPauseEnabled"].AsBool;
 
+        //Attempt to load BackgroundColor property if present
+        if (taskClass["BackgroundColor"] == null)
+            Debug.LogWarning("Warning: No BackgroundColor property set, defaulting to " + c.BackgroundColor + " for value.");
+        else
+            c.BackgroundColor = HexToColor(taskClass["BackgroundColor"]);
+
         return c;
     }
 
+    // Note that Color32 and Color implictly convert to each other. You may pass a Color object to this method without first casting it.
+    static string ColorToHex(Color32 color)
+    {
+        string hex = color.r.ToString("X2") + color.g.ToString("X2") + color.b.ToString("X2");
+        return hex;
+    }
+
+    static Color HexToColor(string hex)
+    {
+        byte r = byte.Parse(hex.Substring(0, 2), System.Globalization.NumberStyles.HexNumber);
+        byte g = byte.Parse(hex.Substring(2, 2), System.Globalization.NumberStyles.HexNumber);
+        byte b = byte.Parse(hex.Substring(4, 2), System.Globalization.NumberStyles.HexNumber);
+        return new Color32(r, g, b, 255);
+    }
+
     //Helper function which just gets the text contents of a file and returns them as a string
-    private static string getFileContents(string fullFilePathAndName)
+    public static string getFileContents(string fullFilePathAndName)
     {
         FileStream fileReader = File.OpenRead(fullFilePathAndName);
         StreamReader reader = new StreamReader(fileReader);
@@ -89,7 +110,8 @@ public class JSONDataLoader : MonoBehaviour {
         else
         {
             JSONArray interfaces = taskClass["Interfaces"].AsArray;
-            for(int i = 0; i < interfaces.Count; i++) { 
+            for (int i = 0; i < interfaces.Count; i++)
+            {
                 JSONNode iFace = interfaces[i];
                 string interfaceType = iFace["InterfaceType"];
                 int port = iFace["Port"].AsInt;
@@ -161,6 +183,12 @@ public class JSONDataLoader : MonoBehaviour {
         {
             JSONClass task = taskArray[i].AsObject;
             Task t = new Task();
+
+            if (taskArray[i]["ConditionalEvent"]["TransitionToIndex"] == null)
+                Debug.Log("No transition index provided for task " + i + ". Defaulting to next task.");
+            else
+                t.TransitionIndex = taskArray[i]["ConditionalEvent"]["TransitionToIndex"].AsInt;
+
             if (taskArray[i]["ConditionalEvent"]["EndConditions"] == null)
             {
                 Debug.LogError("Error: All Conditional Events MUST have an end condition. Please add either a Timeout or InputEvent to the EndConditions property.");
@@ -215,6 +243,18 @@ public class JSONDataLoader : MonoBehaviour {
                             else
                                 t.addStimuli(new AudioStimuli(stateArray[j]["File"], stateArray[j]["Loop"].AsBool));
                             break;
+                        case "MultiImageAnimation":
+                            if (stateArray[j]["Files"] == null || stateArray[j]["X"] == null || stateArray[j]["Y"] == null || stateArray[j]["Width"] == null || stateArray[j]["Height"] == null || stateArray[j]["TimePerImage"] == null || stateArray[j]["Loop"] == null)
+                                Debug.LogWarning("Warning: There was a problem loading the MultiImageAnimation state in event " + i + " condition " + j + ". Skipping...");
+                            else
+                            {
+                                JSONArray JSONFiles = stateArray[j]["Files"].AsArray;
+                                string[] files = new string[JSONFiles.Count];
+                                for (int k = 0; k < JSONFiles.Count; k++)
+                                    files[k] = JSONFiles[k];
+                                t.addStimuli(new MultiImageAnimationStimuli(files, new Vector2(stateArray[j]["X"].AsFloat, stateArray[j]["Y"].AsFloat), new Vector2(stateArray[j]["Width"].AsFloat, stateArray[j]["Height"].AsFloat), stateArray[j]["TimePerImage"].AsFloat, stateArray[j]["Loop"].AsBool));
+                            }
+                            break;
                     }
                 }
             }
@@ -229,14 +269,22 @@ public class JSONDataLoader : MonoBehaviour {
     public class Configuration
     {
         private bool _globalPauseEnabled;
+        private Color _backgroundColor;
         private InterfaceConfiguration _interfaces;
         private TaskProcedure _taskProcedure;
 
         public Configuration(InterfaceConfiguration interfaces, TaskProcedure taskProcedure)
         {
-            GlobalPauseEnabled = false;
+            _globalPauseEnabled = false;
+            _backgroundColor = Color.black;
             _interfaces = interfaces;
             _taskProcedure = taskProcedure;
+        }
+
+        public Color BackgroundColor
+        {
+            get { return _backgroundColor; }
+            set { _backgroundColor = value; }
         }
 
         public bool GlobalPauseEnabled
@@ -304,7 +352,7 @@ public class JSONDataLoader : MonoBehaviour {
 
         public void setKeyboardMap(string[] keys, string[] commands)
         {
-            if(keys.Length != commands.Length)
+            if (keys.Length != commands.Length)
             {
                 Debug.LogError("Error: KeyMap for Keyboard Interface has different length for keys and commands.");
                 Application.Quit();
@@ -496,7 +544,7 @@ public class JSONDataLoader : MonoBehaviour {
 
         public void startFromBeginning()
         {
-            foreach(Task t in _tasks)
+            foreach (Task t in _tasks)
                 t.setTaskState(false);
             _index = 0;
             _tasks[0].setTaskState(true);
@@ -514,16 +562,21 @@ public class JSONDataLoader : MonoBehaviour {
                 return _tasks[_index];
             else return null;
         }
-        
+
         public bool nextTask()
         {
-            if(_index < _tasks.Count) _tasks[_index].setTaskState(false);
-            if (_index + 1 < _tasks.Count)
+            if (_index < _tasks.Count) _tasks[_index].setTaskState(false);
+            int nextIndex = _index + 1;
+            if(_tasks[_index].TransitionIndex != -1 && _tasks[_index].TransitionIndex >= 0 && _tasks[_index].TransitionIndex < _tasks.Count && _tasks[_index].TransitionIndex != _index)
             {
-                _tasks[_index + 1].setTaskState(true);
-                _tasks[_index + 1].startConditionMonitoring();
+                nextIndex = _tasks[_index].TransitionIndex;
             }
-            _index = _index + 1;
+            if (nextIndex < _tasks.Count)
+            {
+                _tasks[nextIndex].setTaskState(true);
+                _tasks[nextIndex].startConditionMonitoring();
+            }
+            _index = nextIndex;
             return _index < _tasks.Count;
         }
 
@@ -537,17 +590,31 @@ public class JSONDataLoader : MonoBehaviour {
         {
             return _index >= _tasks.Count;
         }
+
+        public int Index
+        {
+            get { return _index; }
+            set { _index = value; }
+        }
     }
 
     public class Task
     {
         private List<ICondition> _endConditions;
         private List<IStimuli> _stateStimuli;
+        private int _transitionIndex;
 
         public Task()
         {
             _endConditions = new List<ICondition>();
             _stateStimuli = new List<IStimuli>();
+            _transitionIndex = -1;
+        }
+
+        public int TransitionIndex
+        {
+            get { return _transitionIndex; }
+            set { _transitionIndex = value; }
         }
 
         public void addCondition(ICondition c)
@@ -570,7 +637,7 @@ public class JSONDataLoader : MonoBehaviour {
 
         public void setTaskState(bool active)
         {
-            foreach(IStimuli s in _stateStimuli)
+            foreach (IStimuli s in _stateStimuli)
             {
                 if (active)
                     s.showStimuli();
@@ -581,7 +648,7 @@ public class JSONDataLoader : MonoBehaviour {
 
         public void startConditionMonitoring()
         {
-            foreach(ICondition c in _endConditions)
+            foreach (ICondition c in _endConditions)
                 c.startConditionMonitoring();
         }
 
@@ -745,6 +812,87 @@ public class JSONDataLoader : MonoBehaviour {
         public bool isStimuliLoaded()
         {
             return _loaderObject.isDone;
+        }
+    }
+
+    public class MultiImageAnimationStimuli : IStimuli
+    {
+        private WWW[] _loaderObjects;
+        private GameObject[] _renderObjects;
+        private Texture2D[] _stimuli;
+        private SpriteRenderer[] _renderers;
+        private GameObject _rootObject;
+        private int _index;
+        private float _currentIndexStartTime;
+        private float _timePerImage;
+        private bool _loop;
+        public MultiImageAnimationStimuli(string[] files, Vector2 location, Vector2 size, float timePerImage, bool loop)
+        {
+            _rootObject = new GameObject();
+            _loaderObjects = new WWW[files.Length];
+            _renderObjects = new GameObject[files.Length];
+            _stimuli = new Texture2D[files.Length];
+            _renderers = new SpriteRenderer[files.Length];
+            for (int i = 0; i < files.Length; i++)
+            {
+                string path = "file:///" + files[i].Replace('\\', '/');
+                _loaderObjects[i] = new WWW(path);
+                _renderObjects[i] = new GameObject();
+                _renderObjects[i].transform.position = Camera.main.ScreenToWorldPoint(location);
+                _renderObjects[i].transform.position = new Vector3(_renderObjects[i].transform.position.x, _renderObjects[i].transform.position.y, 0f);
+                _renderers[i] = _renderObjects[i].AddComponent<SpriteRenderer>();
+                while (!_loaderObjects[i].isDone)
+                    Debug.Log("Loading visual asset " + path + " - " + _loaderObjects[i].progress + "%");
+                Debug.Log("Done loading visual asset" + path + ".");
+                _stimuli[i] = _loaderObjects[i].texture;
+                _renderers[i].sprite = Sprite.Create(_stimuli[i], new Rect(0f, 0f, _loaderObjects[i].texture.width, _loaderObjects[i].texture.height), Vector2.zero);
+                _renderObjects[i].transform.localScale = new Vector3(size.x / _loaderObjects[i].texture.width, size.y / _loaderObjects[i].texture.height, 0f);
+                _renderObjects[i].transform.parent = _rootObject.transform;
+                _renderObjects[i].AddComponent<MultiImageAnimationStimuliBehavior>().Script = this;
+                _renderObjects[i].SetActive(false);
+            }
+            _index = 0;
+            _timePerImage = timePerImage;
+            _loop = loop;
+        }
+
+        public void updateStimuli()
+        {
+            if (_rootObject.activeSelf)
+            {
+                if (Time.time - _currentIndexStartTime >= _timePerImage)
+                {
+                    _renderObjects[_index].SetActive(false);
+                    _index++;
+                    if (_loop) _index %= _renderObjects.Length;
+                    if (_index < _renderObjects.Length)
+                    {
+                        _renderObjects[_index].SetActive(true);
+                        _currentIndexStartTime = Time.time;
+                    }
+                }
+            }
+        }
+
+        public void showStimuli()
+        {
+            _rootObject.SetActive(true);
+            _index = 0;
+            _renderObjects[_index].SetActive(true);
+            _currentIndexStartTime = Time.time;
+        }
+
+        public void removeStimuli()
+        {
+            _rootObject.SetActive(false);
+        }
+
+        public bool isStimuliLoaded()
+        {
+            bool isLoaded = true;
+            for (int i = 0; i < _loaderObjects.Length; i++)
+                isLoaded &= _loaderObjects[i].isDone;
+            return isLoaded;
         }
     }
 }

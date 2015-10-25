@@ -2,8 +2,9 @@
 using System.Collections;
 
 public class SystemStateMachine : MonoBehaviour {
-    public string filename = "TaskConfiguration.json";
-
+    public string fallBackFilename = "TaskConfiguration.json";
+    public string conditionConfigurationFilenamePlayerPrefsString = "conditionConfigurationFilename";
+    public string placeNumberPlayerPrefsString = "";
     public KeyCode forceCloseKey = KeyCode.Escape;
     public KeyCode globalPauseKey = KeyCode.BackQuote;
 
@@ -17,12 +18,24 @@ public class SystemStateMachine : MonoBehaviour {
     // Use this for initialization
     void Start () {
         //Load the JSON file which contains the task state machine and controller configuration
-        config = JSONDataLoader.LoadDataFromJSON(Application.persistentDataPath + "/" + filename);
+        if(PlayerPrefs.HasKey(conditionConfigurationFilenamePlayerPrefsString))
+            config = JSONDataLoader.LoadTaskConfigurationDataFromJSON(Application.persistentDataPath + "/" + PlayerPrefs.GetString(conditionConfigurationFilenamePlayerPrefsString));
+        else
+            config = JSONDataLoader.LoadTaskConfigurationDataFromJSON(Application.persistentDataPath + "/" + fallBackFilename);
+
+        if (PlayerPrefs.HasKey(placeNumberPlayerPrefsString))
+        {
+            int startIndex = PlayerPrefs.GetInt(placeNumberPlayerPrefsString);
+            if (!(startIndex < 0 || startIndex > config.TaskProcedure.Tasks.Count))
+                config.TaskProcedure.Index = startIndex; ;
+        }
 
         ///GLOBAL CONFIG
         /// 
         globalPauseInEffect = false;
         prevGlobalPauseKeyState = false;
+
+        Camera.main.backgroundColor = config.BackgroundColor;
         ///
 
         //Create a controller interface using the controller configuration from the JSON
