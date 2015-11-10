@@ -184,11 +184,6 @@ public class JSONDataLoader : MonoBehaviour
             JSONClass task = taskArray[i].AsObject;
             Task t = new Task();
 
-            if (taskArray[i]["ConditionalEvent"]["TransitionToIndex"] == null)
-                Debug.Log("No transition index provided for task " + i + ". Defaulting to next task.");
-            else
-                t.TransitionIndex = taskArray[i]["ConditionalEvent"]["TransitionToIndex"].AsInt;
-
             if (taskArray[i]["ConditionalEvent"]["EndConditions"] == null)
             {
                 Debug.LogError("Error: All Conditional Events MUST have an end condition. Please add either a Timeout or InputEvent to the EndConditions property.");
@@ -206,13 +201,23 @@ public class JSONDataLoader : MonoBehaviour
                             if (conditionArray[j]["Duration"] == null)
                                 Debug.LogWarning("Warning: There was a problem loading the timeout condition in event " + i + " condition " + j + ". Skipping...");
                             else
-                                t.addCondition(new TimeoutCondition(conditionArray[j]["Duration"].AsInt));
+                            {
+                                int? transitionToIndex = -1;
+                                if (conditionArray[j]["TransitionToIndex"] != null)
+                                    transitionToIndex = conditionArray[j]["TransitionToIndex"].AsInt;
+                                t.addCondition(new TimeoutCondition(transitionToIndex, conditionArray[j]["Duration"].AsInt));
+                            }
                             break;
                         case "InputCommand":
                             if (conditionArray[j]["Duration"] == null || conditionArray[j]["CommandName"] == null)
                                 Debug.LogWarning("Warning: There was a problem loading the command condition in event " + i + " condition " + j + ". Skipping...");
                             else
-                                t.addCondition(new CommandCondition(conditionArray[j]["CommandName"], conditionArray[j]["Duration"].AsInt));
+                            {
+                                int? transitionToIndex = -1;
+                                if (conditionArray[j]["TransitionToIndex"] != null)
+                                    transitionToIndex = conditionArray[j]["TransitionToIndex"].AsInt;
+                                t.addCondition(new CommandCondition(transitionToIndex, conditionArray[j]["CommandName"], conditionArray[j]["Duration"].AsInt));
+                            }
                             break;
                     }
                 }
@@ -563,20 +568,16 @@ public class JSONDataLoader : MonoBehaviour
             else return null;
         }
 
-        public bool nextTask()
+        public bool setTask(int taskNumber)
         {
-            if (_index < _tasks.Count) _tasks[_index].setTaskState(false);
-            int nextIndex = _index + 1;
-            if(_tasks[_index].TransitionIndex != -1 && _tasks[_index].TransitionIndex >= 0 && _tasks[_index].TransitionIndex < _tasks.Count && _tasks[_index].TransitionIndex != _index)
-            {
-                nextIndex = _tasks[_index].TransitionIndex;
+            if (taskNumber == -1)
+                taskNumber = _index + 1;
+            _tasks[_index].setTaskState(false);
+            if (taskNumber < _tasks.Count) {
+                _tasks[taskNumber].setTaskState(true);
+                _tasks[taskNumber].startConditionMonitoring();
             }
-            if (nextIndex < _tasks.Count)
-            {
-                _tasks[nextIndex].setTaskState(true);
-                _tasks[nextIndex].startConditionMonitoring();
-            }
-            _index = nextIndex;
+            _index = taskNumber;
             return _index < _tasks.Count;
         }
 
@@ -611,12 +612,6 @@ public class JSONDataLoader : MonoBehaviour
             _transitionIndex = -1;
         }
 
-        public int TransitionIndex
-        {
-            get { return _transitionIndex; }
-            set { _transitionIndex = value; }
-        }
-
         public void addCondition(ICondition c)
         {
             _endConditions.Add(c);
@@ -627,12 +622,15 @@ public class JSONDataLoader : MonoBehaviour
             _stateStimuli.Add(s);
         }
 
-        public bool isTaskComplete()
+        public int? isTaskComplete()
         {
-            bool complete = false;
             foreach (ICondition c in _endConditions)
-                complete |= c.isConditionMet();
-            return complete;
+            {
+                int? conditionResult = c.isConditionMet();
+                if (conditionResult.HasValue)
+                    return conditionResult.Value;
+            }
+            return null;
         }
 
         public void setTaskState(bool active)
@@ -663,17 +661,19 @@ public class JSONDataLoader : MonoBehaviour
     {
         void startConditionMonitoring();
         void setConditionStatus(string[] commands);
-        bool isConditionMet();
+        int? isConditionMet();
     }
 
     public class TimeoutCondition : ICondition
     {
         private float _startTime;
         private float _timeout;
+        private int? _transitionTarget;
 
-        public TimeoutCondition(int timeoutInMilliseconds)
+        public TimeoutCondition(int? transitionTarget, int timeoutInMilliseconds)
         {
             _timeout = (float)timeoutInMilliseconds;
+            _transitionTarget = transitionTarget;
         }
 
         public void startConditionMonitoring()
@@ -686,9 +686,11 @@ public class JSONDataLoader : MonoBehaviour
             //Do nothing because timeouts don't care about commands
         }
 
-        public bool isConditionMet()
+        public int? isConditionMet()
         {
-            return (Time.time - _startTime) > _timeout;
+            if ((Time.time - _startTime) > _timeout)
+                return _transitionTarget;
+            else return null;
         }
     }
 
@@ -698,11 +700,14 @@ public class JSONDataLoader : MonoBehaviour
         private bool _isMonitoring;
         private float _duration;
         private string _watchCommand;
-        public CommandCondition(string command, int duration)
+        private int? _transitionTarget;
+
+        public CommandCondition(int? transitionTarget, string command, int duration)
         {
             _watchCommand = command;
             _duration = duration;
             _startTime = float.MaxValue;
+            _transitionTarget = transitionTarget;
         }
 
         public void startConditionMonitoring()
@@ -729,9 +734,11 @@ public class JSONDataLoader : MonoBehaviour
             }
         }
 
-        public bool isConditionMet()
+        public int? isConditionMet()
         {
-            return _isMonitoring && ((Time.time - _startTime) >= _duration);
+            if (_isMonitoring && ((Time.time - _startTime) >= _duration))
+                return _transitionTarget;
+            else return null;
         }
     }
 
@@ -760,7 +767,7 @@ public class JSONDataLoader : MonoBehaviour
                 Debug.Log("Loading visual asset " + path + " - " + _loaderObject.progress + "%");
             Debug.Log("Done loading visual asset" + path + ".");
             _stimuli = _loaderObject.texture;
-            _renderer.sprite = Sprite.Create(_stimuli, new Rect(0f, 0f, _loaderObject.texture.width, _loaderObject.texture.height), Vector2.zero);
+            _renderer.sprite = Sprite.Create(_stimuli, new Rect(0f, 0f, _loaderObject.texture.width, _loaderObject.texture.height), Vector2.zero, 1f);
             _renderObject.transform.localScale = new Vector3(size.x / _loaderObject.texture.width, size.y / _loaderObject.texture.height, 0f);
         }
 
@@ -845,7 +852,7 @@ public class JSONDataLoader : MonoBehaviour
                     Debug.Log("Loading visual asset " + path + " - " + _loaderObjects[i].progress + "%");
                 Debug.Log("Done loading visual asset" + path + ".");
                 _stimuli[i] = _loaderObjects[i].texture;
-                _renderers[i].sprite = Sprite.Create(_stimuli[i], new Rect(0f, 0f, _loaderObjects[i].texture.width, _loaderObjects[i].texture.height), Vector2.zero);
+                _renderers[i].sprite = Sprite.Create(_stimuli[i], new Rect(0f, 0f, _loaderObjects[i].texture.width, _loaderObjects[i].texture.height), Vector2.zero, 1f);
                 _renderObjects[i].transform.localScale = new Vector3(size.x / _loaderObjects[i].texture.width, size.y / _loaderObjects[i].texture.height, 0f);
                 _renderObjects[i].transform.parent = _rootObject.transform;
                 _renderObjects[i].AddComponent<MultiImageAnimationStimuliBehavior>().Script = this;

@@ -1,0 +1,4 @@
+todo
+-cumulative condition?
+-logging
+-build task spec files

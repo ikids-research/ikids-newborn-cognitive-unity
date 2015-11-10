@@ -38,14 +38,15 @@
         ],
         "InterfaceMaster": "Keyboard",
         "GlobalPauseEnabled": "true",
-		"BackgroundColor": "0000aa",
+		"BackgroundColor": "00003a",
         "TaskProcedure": [
             {
 				"ConditionalEvent": {
                     "EndConditions": [
                         {
                             "ConditionType": "Timeout",
-                            "Duration": 30
+                            "Duration": 5,
+							"TransitionToIndex": 2
                         },
                         {
                             "ConditionType": "InputCommand",
@@ -57,47 +58,47 @@
                         {
 							"_comment": "Left",
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test1.png",
-                            "X": 121,
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test1.png",
+                            "X": 124,
                             "Y": 64,
-                            "Width": 498,
-                            "Height": 936
+                            "Width": 600,
+                            "Height": 934
                         },
 						{
 							"_comment": "Right",
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test2.png",
-                            "X": 1246,
-                            "Y": 64,
-                            "Width": 498,
-                            "Height": 936
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test2.png",
+                            "X": 1253,
+                            "Y": 67,
+                            "Width": 597,
+                            "Height": 931
                         },
                         {
 							"_comment": "S",
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test3.png",
-                            "X": 911,
-                            "Y": 321,
-                            "Width": 184,
-                            "Height": 152
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test3.png",
+                            "X": 918,
+                            "Y": 154,
+                            "Width": 167,
+                            "Height": 165
                         },
                         {
 							"_comment": "W",
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test4.png",
-                            "X": 902,
-                            "Y": 449,
-                            "Width": 213,
-                            "Height": 186
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test4.png",
+                            "X": 904,
+                            "Y": 443,
+                            "Width": 202,
+                            "Height": 192
                         },
 						{
 							"_comment": "Center",
 							"StateType": "MultiImageAnimation",
-							"Files": ["C:\\\\Users\\Kevin\\Desktop\\test5.png", "C:\\\\Users\\Kevin\\Desktop\\test6.png"],
-							"X": 794,
+							"Files": ["C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test5.png", "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test6.png"],
+							"X": 799,
 							"Y": 654,
-							"Width": 366,
-							"Height": 346,
+							"Width": 357,
+							"Height": 343,
 							"TimePerImage": 0.25,
 							"Loop": true
 						}
@@ -109,7 +110,8 @@
                     "EndConditions": [
                         {
                             "ConditionType": "Timeout",
-                            "Duration": 30
+                            "Duration": 5,
+							"TransitionToIndex": 0
                         },
                         {
                             "ConditionType": "InputCommand",
@@ -120,7 +122,7 @@
                     "State": [
                         {
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test1.png",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test1.png",
                             "X": 0,
                             "Y": 0,
                             "Width": 10,
@@ -128,7 +130,7 @@
                         },
                         {
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test2.png",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test2.png",
                             "X": 10,
                             "Y": 10,
                             "Width": 10,
@@ -136,7 +138,7 @@
                         },
                         {
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test3.png",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test3.png",
                             "X": 300,
                             "Y": 300,
                             "Width": 400,
@@ -144,12 +146,12 @@
                         },
                         {
                             "StateType": "PlaySound",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test1.wav",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test1.wav",
                             "Loop": "false"
                         },
 						{
 							"StateType": "MultiImageAnimation",
-							"Files": ["C:\\\\Users\\Kevin\\Desktop\\test4.png", "C:\\\\Users\\Kevin\\Desktop\\test5.png"],
+							"Files": ["C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test4.png", "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test5.png"],
 							"X": 400,
 							"Y": 400,
 							"Width": 100,
@@ -162,28 +164,29 @@
 			},
 			{
                 "ConditionalEvent": {
-					"TransitionToIndex": 0,
                     "EndConditions": [
                         {
                             "ConditionType": "InputCommand",
                             "CommandName": "down",
-                            "Duration": 5
+                            "Duration": 0.5
                         },
 						{
                             "ConditionType": "InputCommand",
                             "CommandName": "pause",
-                            "Duration": 3
+                            "Duration": 3,
+							"TransitionToIndex": 0
                         },
 						{
 							"ConditionType": "InputCommand",
                             "CommandName": "tcpContinue",
-                            "Duration": 0
+                            "Duration": 0,
+							"TransitionToIndex": 0
 						}
                     ],
                     "State": [
                         {
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test4.png",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test4.png",
                             "X": 100,
                             "Y": 100,
                             "Width": 200,
@@ -191,7 +194,7 @@
                         },
                         {
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test5.png",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test5.png",
                             "X": 500,
                             "Y": 100,
                             "Width": 200,
@@ -199,7 +202,7 @@
                         },
                         {
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test6.png",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test6.png",
                             "X": 250,
                             "Y": 500,
                             "Width": 200,
@@ -207,7 +210,32 @@
                         },
                         {
                             "StateType": "PlaySound",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test2.wav",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test2.wav",
+                            "Loop": "true"
+                        }
+                    ]
+                }
+			},
+			{
+                "ConditionalEvent": {
+                    "EndConditions": [
+                        {
+                            "ConditionType": "Timeout",
+                            "Duration": 5
+                        }
+                    ],
+                    "State": [
+                        {
+                            "StateType": "DisplayImage",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\done.png",
+                            "X": 760,
+                            "Y": 440,
+                            "Width": 400,
+                            "Height": 200
+                        },
+                        {
+                            "StateType": "PlaySound",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test1.wav",
                             "Loop": "true"
                         }
                     ]

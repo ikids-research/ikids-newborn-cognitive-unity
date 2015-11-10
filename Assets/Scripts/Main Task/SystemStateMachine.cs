@@ -17,8 +17,10 @@ public class SystemStateMachine : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        Camera.main.orthographicSize = Screen.height / 2;
+
         //Load the JSON file which contains the task state machine and controller configuration
-        if(PlayerPrefs.HasKey(conditionConfigurationFilenamePlayerPrefsString))
+        if (PlayerPrefs.HasKey(conditionConfigurationFilenamePlayerPrefsString))
             config = JSONDataLoader.LoadTaskConfigurationDataFromJSON(Application.persistentDataPath + "/" + PlayerPrefs.GetString(conditionConfigurationFilenamePlayerPrefsString));
         else
             config = JSONDataLoader.LoadTaskConfigurationDataFromJSON(Application.persistentDataPath + "/" + fallBackFilename);
@@ -76,12 +78,12 @@ public class SystemStateMachine : MonoBehaviour {
                 Debug.Log("Issuing Command : " + command);
             config.TaskProcedure.setConditionStatus(commands);
             //Determine if the task is complete
-            bool taskComplete = config.TaskProcedure.getCurrentTask().isTaskComplete();
-            if (taskComplete)
+            int? taskComplete = config.TaskProcedure.getCurrentTask().isTaskComplete();
+            if (taskComplete.HasValue)
             {
-                Debug.Log("Task Complete");
+                Debug.Log("Task Complete; Transition To " + taskComplete.Value);
                 //If the task is complete, advance to the next task and determine if we're done
-                bool moreTasksLeft = config.TaskProcedure.nextTask();
+                bool moreTasksLeft = config.TaskProcedure.setTask(taskComplete.Value);
                 if (!moreTasksLeft)
                 {
                     controller.safeShutdown();

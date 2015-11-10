@@ -21,15 +21,14 @@ Loading C:\Users\Kevin\Documents\GitHub\ikids-newborn-cognitive-unity\Builds\Bui
 Platform assembly: C:\Users\Kevin\Documents\GitHub\ikids-newborn-cognitive-unity\Builds\Build 0\Loader_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
 Loading C:\Users\Kevin\Documents\GitHub\ikids-newborn-cognitive-unity\Builds\Build 0\Loader_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
 Platform assembly: C:\Users\Kevin\Documents\GitHub\ikids-newborn-cognitive-unity\Builds\Build 0\Loader_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.053 seconds
+- Completed reload, in  0.128 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 3200x1080 at 0,0
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Kevin\Documents\GitHub\ikids-newborn-cognitive-unity\Builds\Build 0\Loader_Data\Managed\System.dll (this message is harmless)
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 11630 -> priority: 1 
-  Thread -> id: ffb0 -> priority: 1 
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: f438 -> priority: 1 
 Generating Test Inputs...
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -39,240 +38,332 @@ Valid inputs. Submitting and transitioning.
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.705947 ms
+UnloadTime: 4.009317 ms
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 262.
-Total: 0.321783 ms (FindLiveObjects: 0.033204 ms CreateObjectMapping: 0.015394 ms MarkObjects: 0.261109 ms  DeleteObjects: 0.011470 ms)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 261.
+Total: 0.235753 ms (FindLiveObjects: 0.028073 ms CreateObjectMapping: 0.016904 ms MarkObjects: 0.176890 ms  DeleteObjects: 0.012678 ms)
 
-No transition index provided for task 0. Defaulting to next task.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test1.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test1.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test1.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test1.png - 0%
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test1.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test1.png.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test2.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test2.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test2.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test2.png - 0%
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test2.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test2.png - 1%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test3.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test2.png.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test3.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test3.png - 0%
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test3.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test3.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test4.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test3.png.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test4.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test4.png - 0%
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test4.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test4.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test5.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test4.png.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test5.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test5.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test5.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test5.png - 0%
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test5.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test5.png.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test6.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test6.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test6.png.
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-No transition index provided for task 1. Defaulting to next task.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test1.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test1.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test1.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test1.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test1.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test1.png.
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test1.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test2.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test2.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test2.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test2.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test2.png.
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test2.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test3.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test3.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test3.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test3.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test3.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test3.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test3.png.
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test3.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C://Users/Kevin/Desktop/test1.wav - 0%
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test1.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C://Users/Kevin/Desktop/test1.wav - 0%
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test1.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C://Users/Kevin/Desktop/test1.wav - 0%
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test1.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading audio assetfile:///C://Users/Kevin/Desktop/test1.wav.
+Done loading audio assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test1.wav.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test4.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test4.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test4.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test4.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test4.png.
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test4.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test5.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test5.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test5.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test5.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test5.png - 0%
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test5.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test5.png.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test4.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test4.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test4.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test4.png - 0%
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test4.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test4.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test5.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test4.png.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test5.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test5.png - 0%
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test5.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test5.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test5.png.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test6.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test6.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C://Users/Kevin/Desktop/test6.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C://Users/Kevin/Desktop/test6.png.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C://Users/Kevin/Desktop/test2.wav - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C://Users/Kevin/Desktop/test2.wav - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C://Users/Kevin/Desktop/test2.wav - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading audio assetfile:///C://Users/Kevin/Desktop/test2.wav.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Waiting for a connection on port 11235...
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test6.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test2.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test2.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test2.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Done loading audio assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/test2.wav.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/done.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/done.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/done.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/done.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -524,7 +615,7 @@ Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Task Complete
+Task Complete; Transition To -1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -604,267 +695,267 @@ Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Task Complete
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : up
+Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1344,7 +1435,7 @@ Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Task Complete; Transition To 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1468,647 +1559,1023 @@ Issuing Command : down
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Task Complete; Transition To -1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Task Complete; Transition To 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Task Complete; Transition To -1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Task Complete; Transition To -1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Task Complete
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Issuing Command : down
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Issuing Command : up
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Issuing Command : down
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Task Complete; Transition To -1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 

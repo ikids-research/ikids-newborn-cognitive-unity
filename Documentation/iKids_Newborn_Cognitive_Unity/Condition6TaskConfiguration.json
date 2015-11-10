@@ -56,7 +56,7 @@
                     "State": [
                         {
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test1.png",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test1.png",
                             "X": 0,
                             "Y": 0,
                             "Width": 10,
@@ -64,7 +64,7 @@
                         },
                         {
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test2.png",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test2.png",
                             "X": 10,
                             "Y": 10,
                             "Width": 10,
@@ -72,7 +72,7 @@
                         },
                         {
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test3.png",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test3.png",
                             "X": 300,
                             "Y": 300,
                             "Width": 400,
@@ -80,12 +80,12 @@
                         },
                         {
                             "StateType": "PlaySound",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test1.wav",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test1.wav",
                             "Loop": "false"
                         },
 						{
 							"StateType": "MultiImageAnimation",
-							"Files": ["C:\\\\Users\\Kevin\\Desktop\\test4.png", "C:\\\\Users\\Kevin\\Desktop\\test5.png"],
+							"Files": ["C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test4.png", "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test5.png"],
 							"X": 400,
 							"Y": 400,
 							"Width": 100,
@@ -119,7 +119,7 @@
                     "State": [
                         {
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test4.png",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test4.png",
                             "X": 100,
                             "Y": 100,
                             "Width": 200,
@@ -127,7 +127,7 @@
                         },
                         {
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test5.png",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test5.png",
                             "X": 500,
                             "Y": 100,
                             "Width": 200,
@@ -135,7 +135,7 @@
                         },
                         {
                             "StateType": "DisplayImage",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test6.png",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test6.png",
                             "X": 250,
                             "Y": 500,
                             "Width": 200,
@@ -143,7 +143,7 @@
                         },
                         {
                             "StateType": "PlaySound",
-                            "File": "C:\\\\Users\\Kevin\\Desktop\\test2.wav",
+                            "File": "C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\test2.wav",
                             "Loop": "true"
                         }
                     ]
