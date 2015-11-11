@@ -8,15 +8,15 @@ namespace JSONDataLoader
     public class TaskProcedure
     {
         private int _index;
-        private List<Task> _tasks;
+        private List<ITask> _tasks;
 
         public TaskProcedure()
         {
-            _tasks = new List<Task>();
+            _tasks = new List<ITask>();
             _index = 0;
         }
 
-        public List<Task> Tasks
+        public List<ITask> Tasks
         {
             get
             {
@@ -26,19 +26,19 @@ namespace JSONDataLoader
 
         public void startFromBeginning()
         {
-            foreach (Task t in _tasks)
+            foreach (ITask t in _tasks)
                 t.setTaskState(false);
             _index = 0;
             _tasks[0].setTaskState(true);
             _tasks[0].startConditionMonitoring();
         }
 
-        public void addTask(Task t)
+        public void addTask(ITask t)
         {
             _tasks.Add(t);
         }
 
-        public Task getCurrentTask()
+        public ITask getCurrentTask()
         {
             if (_index < _tasks.Count)
                 return _tasks[_index];
@@ -88,12 +88,61 @@ namespace JSONDataLoader
             TaskProcedure taskProcedure = new TaskProcedure();
 
             JSONArray taskArray = taskClass["TaskProcedure"].AsArray;
+            int taskIndex = 0;
             for (int i = 0; i < taskArray.Count; i++)
             {
                 if (taskArray[i]["ConditionalEvent"] != null)
                 {
                     JSONClass task = taskArray[i].AsObject;
-                    taskProcedure.addTask(CreateConditionalEventFromJSON(taskClass, task, i));
+                    taskProcedure.addTask(CreateConditionalEventFromJSON(taskClass, task, taskIndex));
+                    taskIndex++;
+                }
+                if (taskArray[i]["RepeatedEvent"] != null)
+                {
+                    JSONArray subParameters = taskArray[i]["RepeatedEvent"]["SubstitutionParameters"].AsArray;
+
+                    //Find the minimum parameter length
+                    int minParams = int.MaxValue;
+                    for (int j = 0; j < subParameters.Count; j++)
+                    {
+                        string parameterSubstitutionString = subParameters[j]["ParameterSubstitutionString"];
+                        JSONArray parameterValues = subParameters[j]["ParameterValues"].AsArray;
+                        if (parameterValues.Count < minParams)
+                            minParams = parameterValues.Count;
+                    }
+
+                    //Get the template for the conditional events to be generated and save independent copies for each parameter
+                    
+                    string templatesString = taskArray[i]["RepeatedEvent"]["ConditionalEventTemplates"].ToString();
+                    string[] conditionalEventsStrings = new string[minParams];
+                    for (int j = 0; j < conditionalEventsStrings.Length; j++)
+                        conditionalEventsStrings[j] = templatesString;
+
+                    //Iterate through the parameter lists and replace values in each conditional event
+                    for (int j = 0; j < subParameters.Count; j++)
+                    {
+                        string parameterSubstitutionString = subParameters[j]["ParameterSubstitutionString"];
+                        JSONArray parameterValues = subParameters[j]["ParameterValues"].AsArray;
+                        string[] substitutionValues = new string[minParams];
+                        for (int k = 0; k < minParams; k++)
+                            substitutionValues[k] = parameterValues[k];
+                        for (int k = 0; k < substitutionValues.Length; k++)
+                        {
+                            int pos = conditionalEventsStrings[k].IndexOf(parameterSubstitutionString);
+                            if (pos < 0) break;
+                            conditionalEventsStrings[k] = conditionalEventsStrings[k].Substring(0, pos) + substitutionValues[k] + conditionalEventsStrings[k].Substring(pos + parameterSubstitutionString.Length);
+                        }
+                    }
+
+                    for (int j = 0; j < conditionalEventsStrings.Length; j++)
+                    {
+                        JSONArray conditionalEvent = JSONArray.Parse(conditionalEventsStrings[j]).AsArray;
+                        for (int k = 0; k < conditionalEvent.Count; k++)
+                        {
+                            taskProcedure.addTask(CreateConditionalEventFromJSON(taskClass, conditionalEvent[k].AsObject, taskIndex));
+                            taskIndex++;
+                        }
+                    }
                 }
             }
 
@@ -164,7 +213,17 @@ namespace JSONDataLoader
         }
     }
 
-    public class Task
+    public interface ITask
+    {
+        void addCondition(ICondition c);
+        void addStimuli(IStimuli s);
+        int? isTaskComplete();
+        void setTaskState(bool active);
+        void startConditionMonitoring();
+        void setConditionStatus(string[] commands);
+    }
+
+    public class Task : ITask
     {
         private List<ICondition> _endConditions;
         private List<IStimuli> _stateStimuli;
