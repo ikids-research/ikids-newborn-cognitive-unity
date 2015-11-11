@@ -45,6 +45,12 @@ namespace JSONDataLoader
             else
                 c.GlobalPauseEnabled = taskClass["GlobalPauseEnabled"].AsBool;
 
+            //Attempt to set maximum allowable pause time
+            if (taskClass["MaximumAllowablePauseTime"] == null)
+                Debug.LogWarning("Warning: No MaximumAllowablePauseTime property set, defaulting to " + c.MaximumAllowablePauseTime + " for value.");
+            else
+                c.MaximumAllowablePauseTime = taskClass["MaximumAllowablePauseTime"].AsFloat; 
+
             //Attempt to load BackgroundColor property if present
             if (taskClass["BackgroundColor"] == null)
                 Debug.LogWarning("Warning: No BackgroundColor property set, defaulting to " + c.BackgroundColor + " for value.");
@@ -105,6 +111,7 @@ namespace JSONDataLoader
         private Color _backgroundColor;
         private InterfaceConfiguration _interfaces;
         private TaskProcedure _taskProcedure;
+        private float _maximumAllowablePauseTime;
 
         public Configuration(InterfaceConfiguration interfaces, TaskProcedure taskProcedure)
         {
@@ -112,6 +119,13 @@ namespace JSONDataLoader
             _backgroundColor = Color.black;
             _interfaces = interfaces;
             _taskProcedure = taskProcedure;
+            _maximumAllowablePauseTime = float.MaxValue;
+        }
+
+        public float MaximumAllowablePauseTime
+        {
+            get { return _maximumAllowablePauseTime; }
+            set { _maximumAllowablePauseTime = value; }
         }
 
         public Color BackgroundColor

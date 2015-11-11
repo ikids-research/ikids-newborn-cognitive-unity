@@ -126,11 +126,16 @@ namespace JSONDataLoader
                         string[] substitutionValues = new string[minParams];
                         for (int k = 0; k < minParams; k++)
                             substitutionValues[k] = parameterValues[k];
+                        
+                        //substitutionValues holds the list of values to be replaced in each consecutive runthrough
+                        //conditionalEventsStrings holds the runthrough templates
+                        //for each parameter, replace the substring in each result with the subvalue
                         for (int k = 0; k < substitutionValues.Length; k++)
                         {
-                            int pos = conditionalEventsStrings[k].IndexOf(parameterSubstitutionString);
-                            if (pos < 0) break;
-                            conditionalEventsStrings[k] = conditionalEventsStrings[k].Substring(0, pos) + substitutionValues[k] + conditionalEventsStrings[k].Substring(pos + parameterSubstitutionString.Length);
+                            conditionalEventsStrings[k] = conditionalEventsStrings[k].Replace(parameterSubstitutionString, substitutionValues[k]);
+                            //int pos = conditionalEventsStrings[k].IndexOf(parameterSubstitutionString);
+                            //if (pos < 0) break;
+                            //conditionalEventsStrings[k] = conditionalEventsStrings[k].Substring(0, pos) + substitutionValues[k] + conditionalEventsStrings[k].Substring(pos + parameterSubstitutionString.Length);
                         }
                     }
 

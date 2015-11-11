@@ -14,6 +14,8 @@ public class SystemStateMachine : MonoBehaviour {
 
     private bool globalPauseInEffect;
     private bool prevGlobalPauseKeyState;
+    private float _pauseStartTime = float.MaxValue;
+    private bool _forcedAbort = false;
     private Color savedBGColor;
 
     private NotificationManager notificationManager;
@@ -58,49 +60,66 @@ public class SystemStateMachine : MonoBehaviour {
         //Force close behavior
         if (Input.GetKey(forceCloseKey))
             Application.Quit();
-
-        //Global pause key behavior
-        bool currentGlobalPauseKeyState = Input.GetKey(globalPauseKey);
-        if (config.GlobalPauseEnabled && !globalPauseInEffect && currentGlobalPauseKeyState && !prevGlobalPauseKeyState)
+        if (!_forcedAbort)
         {
-            globalPauseInEffect = true;
-            setPauseMode(true);
-        }
-        else if (config.GlobalPauseEnabled && globalPauseInEffect && currentGlobalPauseKeyState && !prevGlobalPauseKeyState)
-        {
-            globalPauseInEffect = false;
-            setPauseMode(false);
-        }
-        prevGlobalPauseKeyState = currentGlobalPauseKeyState;
-
-        //Primary state machine behavior
-        if (!config.TaskProcedure.procedureComplete() && !globalPauseInEffect)
-        {
-            //Determine if the task is complete
-            int? taskComplete = config.TaskProcedure.getCurrentTask().isTaskComplete();
-            if (taskComplete.HasValue)
+            //Global pause key behavior
+            bool currentGlobalPauseKeyState = Input.GetKey(globalPauseKey);
+            if (config.GlobalPauseEnabled && !globalPauseInEffect && currentGlobalPauseKeyState && !prevGlobalPauseKeyState)
             {
-                Debug.Log("Task Complete; Transition To " + taskComplete.Value);
-                //If the task is complete, advance to the next task and determine if we're done
-                bool moreTasksLeft = config.TaskProcedure.setTask(taskComplete.Value);
-                if (!moreTasksLeft)
+                globalPauseInEffect = true;
+                setPauseMode(true);
+            }
+            else if (config.GlobalPauseEnabled && globalPauseInEffect && currentGlobalPauseKeyState && !prevGlobalPauseKeyState)
+            {
+                globalPauseInEffect = false;
+                setPauseMode(false);
+            }
+            prevGlobalPauseKeyState = currentGlobalPauseKeyState;
+
+            //Primary state machine behavior
+            if (!config.TaskProcedure.procedureComplete() && !globalPauseInEffect)
+            {
+                //Determine if the task is complete
+                int? taskComplete = config.TaskProcedure.getCurrentTask().isTaskComplete();
+                if (taskComplete.HasValue)
                 {
-                    controller.safeShutdown();
-                    notificationManager.pushNotification("Done!", 1000f);
-                    Debug.Log("Done");
+                    Debug.Log("Task Complete; Transition To " + taskComplete.Value);
+                    //If the task is complete, advance to the next task and determine if we're done
+                    bool moreTasksLeft = config.TaskProcedure.setTask(taskComplete.Value);
+                    if (!moreTasksLeft)
+                    {
+                        controller.safeShutdown();
+                        notificationManager.pushNotification("Done!", 1000f);
+                        Debug.Log("Done");
+                    }
+                }
+                //Get the commands from the master controller
+                string[] commands = controller.getMasterInterfaceCommands();
+                //Update the task procedure with all commands that have been issued
+                foreach (string command in commands)
+                    Debug.Log("Issuing Command : " + command);
+                config.TaskProcedure.setConditionStatus(commands);
+            }
+            else if (globalPauseInEffect)
+            {
+                if (_pauseStartTime != float.MaxValue)
+                {
+                    float currentTime = Time.unscaledTime;
+                    float pausedTime = currentTime - _pauseStartTime;
+                    if (pausedTime > config.MaximumAllowablePauseTime)
+                    {
+                        config.TaskProcedure.Index = int.MaxValue;
+                        controller.safeShutdown();
+                        _forcedAbort = true;
+                        notificationManager.pushNotification("Maximum Pause Time Reached - Aborted", 0.01f);
+                    }
+                    else
+                    {
+                        notificationManager.pushNotification("Global Pause In Effect", 0.01f);
+                        Debug.Log("Global Pause In Effect");
+                    }
                 }
             }
-            //Get the commands from the master controller
-            string[] commands = controller.getMasterInterfaceCommands();
-            //Update the task procedure with all commands that have been issued
-            foreach (string command in commands)
-                Debug.Log("Issuing Command : " + command);
-            config.TaskProcedure.setConditionStatus(commands);
-        }
-        else if (globalPauseInEffect)
-        {
-            notificationManager.pushNotification("Global Pause In Effect", 0.01f);
-            Debug.Log("Global Pause In Effect");
         }
 	}
 
@@ -108,6 +127,7 @@ public class SystemStateMachine : MonoBehaviour {
     {
         if (paused)
         {
+            _pauseStartTime = Time.unscaledTime;
             AudioListener.pause = true;
             Time.timeScale = 0f;
             savedBGColor = Camera.main.backgroundColor;
@@ -115,6 +135,7 @@ public class SystemStateMachine : MonoBehaviour {
         }
         else
         {
+            _pauseStartTime = float.MaxValue;
             AudioListener.pause = false;
             Time.timeScale = 1f;
             Camera.main.backgroundColor = savedBGColor;
