@@ -2,6 +2,7 @@
 using SimpleJSON;
 using System.Collections;
 using UnityEngine.UI;
+using JSONDataLoader;
 
 public class ConditionAndPlaceConfigurationLoader : MonoBehaviour {
     public string filename = "MainFormConfiguration.json";
@@ -14,7 +15,7 @@ public class ConditionAndPlaceConfigurationLoader : MonoBehaviour {
     void Start () {
         string fullPath = Application.persistentDataPath + "/" + filename;
         //Get the JSON contents from file
-        string contents = JSONDataLoader.getFileContents(fullPath);
+        string contents = JSONDataLoader.JSONDataLoader.getFileContents(fullPath);
 
         //Create the root task node for parsing
         JSONNode rootNode = JSONNode.Parse(contents);

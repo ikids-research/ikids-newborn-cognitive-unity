@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using JSONDataLoader;
 
 public class SystemStateMachine : MonoBehaviour {
     public string fallBackFilename = "TaskConfiguration.json";
@@ -23,9 +24,9 @@ public class SystemStateMachine : MonoBehaviour {
 
         //Load the JSON file which contains the task state machine and controller configuration
         if (PlayerPrefs.HasKey(conditionConfigurationFilenamePlayerPrefsString))
-            config = JSONDataLoader.LoadTaskConfigurationDataFromJSON(Application.persistentDataPath + "/" + PlayerPrefs.GetString(conditionConfigurationFilenamePlayerPrefsString));
+            config = JSONDataLoader.JSONDataLoader.LoadTaskConfigurationDataFromJSON(Application.persistentDataPath + "/" + PlayerPrefs.GetString(conditionConfigurationFilenamePlayerPrefsString));
         else
-            config = JSONDataLoader.LoadTaskConfigurationDataFromJSON(Application.persistentDataPath + "/" + fallBackFilename);
+            config = JSONDataLoader.JSONDataLoader.LoadTaskConfigurationDataFromJSON(Application.persistentDataPath + "/" + fallBackFilename);
 
         if (PlayerPrefs.HasKey(placeNumberPlayerPrefsString))
         {

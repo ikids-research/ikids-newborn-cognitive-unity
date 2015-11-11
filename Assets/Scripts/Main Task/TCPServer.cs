@@ -71,9 +71,6 @@ public class TCPServer {
 
         public void StartListening()
         {
-            // Data buffer for incoming data.
-            byte[] bytes = new Byte[1024];
-
             // Establish the local endpoint for the socket.
             // The DNS name of the computer
             // running the listener is "host.contoso.com".

@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using JSONDataLoader;
 
 public class ThreePhaseController {
 
     private TCPServer _tcpServer;
-    private JSONDataLoader.InterfaceConfiguration _interfaces;
+    private InterfaceConfiguration _interfaces;
 
-    public ThreePhaseController(JSONDataLoader.InterfaceConfiguration interfaces)
+    public ThreePhaseController(InterfaceConfiguration interfaces)
     {
         _tcpServer = new TCPServer(interfaces.TcpPort);
         _interfaces = interfaces;
@@ -14,11 +15,11 @@ public class ThreePhaseController {
 
 	public string[] getMasterInterfaceCommands()
     {
-        if (_interfaces.MasterInterface == JSONDataLoader.InterfaceConfiguration.InterfaceType.TCP)
+        if (_interfaces.MasterInterface == InterfaceConfiguration.InterfaceType.TCP)
             return getTCPInterfaceCommands();
-        else if (_interfaces.MasterInterface == JSONDataLoader.InterfaceConfiguration.InterfaceType.Keyboard)
+        else if (_interfaces.MasterInterface == InterfaceConfiguration.InterfaceType.Keyboard)
             return getKeyboardCommands();
-        else if (_interfaces.MasterInterface == JSONDataLoader.InterfaceConfiguration.InterfaceType.XBoxController)
+        else if (_interfaces.MasterInterface == InterfaceConfiguration.InterfaceType.XBoxController)
             return getXBoxControllerCommands();
         return new string[0];
     }
