@@ -209,14 +209,33 @@ public class JSONDataLoader : MonoBehaviour
                             }
                             break;
                         case "InputCommand":
-                            if (conditionArray[j]["Duration"] == null || conditionArray[j]["CommandName"] == null)
+                            if (conditionArray[j]["Duration"] == null || conditionArray[j]["CommandNames"] == null)
                                 Debug.LogWarning("Warning: There was a problem loading the command condition in event " + i + " condition " + j + ". Skipping...");
                             else
                             {
                                 int? transitionToIndex = -1;
                                 if (conditionArray[j]["TransitionToIndex"] != null)
                                     transitionToIndex = conditionArray[j]["TransitionToIndex"].AsInt;
-                                t.addCondition(new CommandCondition(transitionToIndex, conditionArray[j]["CommandName"], conditionArray[j]["Duration"].AsInt));
+                                JSONArray commandArray = conditionArray[j]["CommandNames"].AsArray;
+                                string[] commands = new string[commandArray.Count];
+                                for (int k = 0; k < commandArray.Count; k++)
+                                    commands[k] = commandArray[k];
+                                t.addCondition(new CommandCondition(transitionToIndex, commands, conditionArray[j]["Duration"].AsInt));
+                            }
+                            break;
+                        case "CumulativeInputCommand":
+                            if (conditionArray[j]["Duration"] == null || conditionArray[j]["CommandNames"] == null)
+                                Debug.LogWarning("Warning: There was a problem loading the command condition in event " + i + " condition " + j + ". Skipping...");
+                            else
+                            {
+                                int? transitionToIndex = -1;
+                                if (conditionArray[j]["TransitionToIndex"] != null)
+                                    transitionToIndex = conditionArray[j]["TransitionToIndex"].AsInt;
+                                JSONArray commandArray = conditionArray[j]["CommandNames"].AsArray;
+                                string[] commands = new string[commandArray.Count];
+                                for (int k = 0; k < commandArray.Count; k++)
+                                    commands[k] = commandArray[k];
+                                t.addCondition(new CumulativeCommandCondition(transitionToIndex, commands, conditionArray[j]["Duration"].AsInt));
                             }
                             break;
                     }
@@ -259,6 +278,9 @@ public class JSONDataLoader : MonoBehaviour
                                     files[k] = JSONFiles[k];
                                 t.addStimuli(new MultiImageAnimationStimuli(files, new Vector2(stateArray[j]["X"].AsFloat, stateArray[j]["Y"].AsFloat), new Vector2(stateArray[j]["Width"].AsFloat, stateArray[j]["Height"].AsFloat), stateArray[j]["TimePerImage"].AsFloat, stateArray[j]["Loop"].AsBool));
                             }
+                            break;
+                        case "DisableGlobalPause":
+                            t.addStimuli(new GlobalPauseDisabledStimuli(taskClass["GlobalPauseEnabled"].AsBool));
                             break;
                     }
                 }
@@ -574,8 +596,8 @@ public class JSONDataLoader : MonoBehaviour
                 taskNumber = _index + 1;
             _tasks[_index].setTaskState(false);
             if (taskNumber < _tasks.Count) {
-                _tasks[taskNumber].setTaskState(true);
                 _tasks[taskNumber].startConditionMonitoring();
+                _tasks[taskNumber].setTaskState(true);
             }
             _index = taskNumber;
             return _index < _tasks.Count;
@@ -628,7 +650,10 @@ public class JSONDataLoader : MonoBehaviour
             {
                 int? conditionResult = c.isConditionMet();
                 if (conditionResult.HasValue)
+                {
+                    Debug.Log(c.GetType().ToString());
                     return conditionResult.Value;
+                }
             }
             return null;
         }
@@ -699,12 +724,12 @@ public class JSONDataLoader : MonoBehaviour
         private float _startTime;
         private bool _isMonitoring;
         private float _duration;
-        private string _watchCommand;
+        private string[] _watchCommands;
         private int? _transitionTarget;
 
-        public CommandCondition(int? transitionTarget, string command, int duration)
+        public CommandCondition(int? transitionTarget, string[] commands, int duration)
         {
-            _watchCommand = command;
+            _watchCommands = commands;
             _duration = duration;
             _startTime = float.MaxValue;
             _transitionTarget = transitionTarget;
@@ -713,17 +738,20 @@ public class JSONDataLoader : MonoBehaviour
         public void startConditionMonitoring()
         {
             _isMonitoring = true;
+            _startTime = float.MaxValue;
         }
 
         public void setConditionStatus(string[] commands)
         {
             bool containsCommand = false;
             for (int i = 0; i < commands.Length; i++)
-                if (commands[i] == _watchCommand)
-                {
-                    containsCommand = true;
-                    break;
-                }
+                for(int j = 0; j < _watchCommands.Length;j++)
+                    if (commands[i] == _watchCommands[j])
+                    {
+                        containsCommand = true;
+                        i = commands.Length; //Break outer loop for efficiency
+                        break;
+                    }
             if (_isMonitoring && containsCommand && _startTime == float.MaxValue)
             {
                 _startTime = Time.time;
@@ -737,6 +765,68 @@ public class JSONDataLoader : MonoBehaviour
         public int? isConditionMet()
         {
             if (_isMonitoring && ((Time.time - _startTime) >= _duration))
+                return _transitionTarget;
+            else return null;
+        }
+    }
+
+    public class CumulativeCommandCondition : ICondition
+    {
+        private float _previousTime;
+        private float _cumulativeTime;
+        private bool _isMonitoring;
+        private float _duration;
+        private string[] _watchCommands;
+        private int? _transitionTarget;
+
+        public CumulativeCommandCondition(int? transitionTarget, string[] commands, int duration)
+        {
+            _watchCommands = commands;
+            _duration = duration;
+            _previousTime = float.MaxValue;
+            _transitionTarget = transitionTarget;
+            _cumulativeTime = 0f;
+        }
+
+        public void startConditionMonitoring()
+        {
+            _isMonitoring = true;
+            _cumulativeTime = 0f;
+            _previousTime = float.MaxValue;
+        }
+
+        public void setConditionStatus(string[] commands)
+        {
+            bool containsCommand = false;
+            for (int i = 0; i < commands.Length; i++)
+                for (int j = 0; j < _watchCommands.Length; j++)
+                    if (commands[i] == _watchCommands[j])
+                    {
+                        containsCommand = true;
+                        i = commands.Length; //Break outer loop for efficiency
+                        break;
+                    }
+            if (_isMonitoring && containsCommand && _previousTime == float.MaxValue)
+            {
+                _previousTime = Time.time;
+            }
+            else if (_isMonitoring && containsCommand)
+            {
+                float currentTime = Time.time;
+                _cumulativeTime += currentTime - _previousTime;
+                _previousTime = currentTime;
+            }
+            else if (_isMonitoring && !containsCommand && _previousTime != float.MaxValue)
+            {
+                _cumulativeTime += Time.time - _previousTime;
+                _previousTime = float.MaxValue;
+            }
+        }
+
+        public int? isConditionMet()
+        {
+            Debug.Log(_cumulativeTime);
+            if (_isMonitoring && _cumulativeTime >= _duration)
                 return _transitionTarget;
             else return null;
         }
@@ -901,5 +991,21 @@ public class JSONDataLoader : MonoBehaviour
                 isLoaded &= _loaderObjects[i].isDone;
             return isLoaded;
         }
+    }
+
+    public class GlobalPauseDisabledStimuli : IStimuli
+    {
+        private SystemStateMachine _stateMachine;
+        private bool _stateMachineGlobalPauseEnabledValue;
+
+        public GlobalPauseDisabledStimuli(bool defaultValue)
+        {
+            _stateMachine = FindObjectOfType<SystemStateMachine>();
+            _stateMachineGlobalPauseEnabledValue = defaultValue;
+        }
+
+        public void showStimuli() { _stateMachine.GlobalPauseEnabled = false; }
+        public void removeStimuli() { _stateMachine.GlobalPauseEnabled = _stateMachineGlobalPauseEnabledValue; }
+        public bool isStimuliLoaded() { return true; }
     }
 }

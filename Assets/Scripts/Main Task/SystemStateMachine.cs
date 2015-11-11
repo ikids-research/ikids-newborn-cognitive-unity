@@ -15,6 +15,8 @@ public class SystemStateMachine : MonoBehaviour {
     private bool prevGlobalPauseKeyState;
     private Color savedBGColor;
 
+    private NotificationManager notificationManager;
+
     // Use this for initialization
     void Start () {
         Camera.main.orthographicSize = Screen.height / 2;
@@ -39,6 +41,8 @@ public class SystemStateMachine : MonoBehaviour {
 
         Camera.main.backgroundColor = config.BackgroundColor;
         ///
+
+        notificationManager = FindObjectOfType<NotificationManager>();
 
         //Create a controller interface using the controller configuration from the JSON
         controller = new ThreePhaseController(config.Interfaces);
@@ -71,12 +75,6 @@ public class SystemStateMachine : MonoBehaviour {
         //Primary state machine behavior
         if (!config.TaskProcedure.procedureComplete() && !globalPauseInEffect)
         {
-            //Get the commands from the master controller
-            string[] commands = controller.getMasterInterfaceCommands();
-            //Update the task procedure with all commands that have been issued
-            foreach (string command in commands)
-                Debug.Log("Issuing Command : " + command);
-            config.TaskProcedure.setConditionStatus(commands);
             //Determine if the task is complete
             int? taskComplete = config.TaskProcedure.getCurrentTask().isTaskComplete();
             if (taskComplete.HasValue)
@@ -87,12 +85,20 @@ public class SystemStateMachine : MonoBehaviour {
                 if (!moreTasksLeft)
                 {
                     controller.safeShutdown();
+                    notificationManager.pushNotification("Done!", 1000f);
                     Debug.Log("Done");
                 }
             }
+            //Get the commands from the master controller
+            string[] commands = controller.getMasterInterfaceCommands();
+            //Update the task procedure with all commands that have been issued
+            foreach (string command in commands)
+                Debug.Log("Issuing Command : " + command);
+            config.TaskProcedure.setConditionStatus(commands);
         }
         else if (globalPauseInEffect)
         {
+            notificationManager.pushNotification("Global Pause In Effect", 0.01f);
             Debug.Log("Global Pause In Effect");
         }
 	}
@@ -102,7 +108,6 @@ public class SystemStateMachine : MonoBehaviour {
         if (paused)
         {
             AudioListener.pause = true;
-            Camera.main.cullingMask = 0;
             Time.timeScale = 0f;
             savedBGColor = Camera.main.backgroundColor;
             Camera.main.backgroundColor = Color.black;
@@ -110,10 +115,15 @@ public class SystemStateMachine : MonoBehaviour {
         else
         {
             AudioListener.pause = false;
-            Camera.main.cullingMask = 1;
             Time.timeScale = 1f;
             Camera.main.backgroundColor = savedBGColor;
         }
 
+    }
+
+    public bool GlobalPauseEnabled
+    {
+        get { return config.GlobalPauseEnabled; }
+        set { config.GlobalPauseEnabled = value; }
     }
 }
