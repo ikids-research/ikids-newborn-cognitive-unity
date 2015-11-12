@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using JSONDataLoader;
+using NCalc;
 
 public class SystemStateMachine : MonoBehaviour {
     public string fallBackFilename = "TaskConfiguration.json";
@@ -18,10 +19,10 @@ public class SystemStateMachine : MonoBehaviour {
     private bool _forcedAbort = false;
     private Color savedBGColor;
 
-    private NotificationManager notificationManager;
-
     // Use this for initialization
     void Start () {
+        NotificationManager.NotificationObject = FindObjectOfType<NotificationManager>().gameObject;
+
         Camera.main.orthographicSize = Screen.height / 2;
 
         //Load the JSON file which contains the task state machine and controller configuration
@@ -44,8 +45,6 @@ public class SystemStateMachine : MonoBehaviour {
 
         Camera.main.backgroundColor = config.BackgroundColor;
         ///
-
-        notificationManager = FindObjectOfType<NotificationManager>();
 
         //Create a controller interface using the controller configuration from the JSON
         controller = new ThreePhaseController(config.Interfaces);
@@ -79,9 +78,16 @@ public class SystemStateMachine : MonoBehaviour {
             //Primary state machine behavior
             if (!config.TaskProcedure.procedureComplete() && !globalPauseInEffect)
             {
+                //Get the commands from the master controller
+                string[] commands = controller.getMasterInterfaceCommands();
+                //Update the task procedure with all commands that have been issued
+                foreach (string command in commands)
+                    Debug.Log("Issuing Command : " + command);
+                config.TaskProcedure.setConditionStatus(commands);
+
                 //Determine if the task is complete
                 int? taskComplete = config.TaskProcedure.getCurrentTask().isTaskComplete();
-                if (taskComplete.HasValue)
+                while (taskComplete.HasValue)
                 {
                     Debug.Log("Task Complete; Transition To " + taskComplete.Value);
                     //If the task is complete, advance to the next task and determine if we're done
@@ -89,16 +95,13 @@ public class SystemStateMachine : MonoBehaviour {
                     if (!moreTasksLeft)
                     {
                         controller.safeShutdown();
-                        notificationManager.pushNotification("Done!", 1000f);
+                        NotificationManager.pushNotification("Done!", 1000f);
                         Debug.Log("Done");
+                        break;
                     }
+
+                    taskComplete = config.TaskProcedure.getCurrentTask().isTaskComplete();
                 }
-                //Get the commands from the master controller
-                string[] commands = controller.getMasterInterfaceCommands();
-                //Update the task procedure with all commands that have been issued
-                foreach (string command in commands)
-                    Debug.Log("Issuing Command : " + command);
-                config.TaskProcedure.setConditionStatus(commands);
             }
             else if (globalPauseInEffect)
             {
@@ -111,11 +114,11 @@ public class SystemStateMachine : MonoBehaviour {
                         config.TaskProcedure.Index = int.MaxValue;
                         controller.safeShutdown();
                         _forcedAbort = true;
-                        notificationManager.pushNotification("Maximum Pause Time Reached - Aborted", 0.01f);
+                        NotificationManager.pushNotification("Maximum Pause Time Reached - Aborted", 0.01f);
                     }
                     else
                     {
-                        notificationManager.pushNotification("Global Pause In Effect", 0.01f);
+                        NotificationManager.pushNotification("Global Pause In Effect", 0.01f);
                         Debug.Log("Global Pause In Effect");
                     }
                 }
@@ -132,6 +135,7 @@ public class SystemStateMachine : MonoBehaviour {
             Time.timeScale = 0f;
             savedBGColor = Camera.main.backgroundColor;
             Camera.main.backgroundColor = Color.black;
+            Camera.main.cullingMask = 1 << 5; //Just UI layer '5'
         }
         else
         {
@@ -139,6 +143,7 @@ public class SystemStateMachine : MonoBehaviour {
             AudioListener.pause = false;
             Time.timeScale = 1f;
             Camera.main.backgroundColor = savedBGColor;
+            Camera.main.cullingMask = ~0x00000000; //Everything
         }
 
     }

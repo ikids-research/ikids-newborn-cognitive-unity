@@ -3,14 +3,17 @@ using System.Collections;
 
 public class NotificationManager : MonoBehaviour {
 
-    public Vector3 showPosition = new Vector3(125f, 23.2f, 0f);
-    public Vector3 hiddenPosition = new Vector3(125f, -30f, 0f);
-    private UnityEngine.UI.Text textField;
+    public static Vector3 showPosition = new Vector3(125f, 23.2f, 0f);
+    public static Vector3 hiddenPosition = new Vector3(125f, -30f, 0f);
+    private static UnityEngine.UI.Text textField;
     enum State { Hidden, Active };
-    private State currentState;
-    private float activeStartTime;
-    private float currentActiveDuration;
-    public float transitionTimeInSeconds = 0.25f;
+    private static State currentState;
+    private static float activeStartTime;
+    private static float currentActiveDuration;
+    public static float transitionTimeInSeconds = 0.25f;
+    public static GameObject NotificationObject;
+    public static float DefaultDuration = 4f;
+
     // Use this for initialization
     void Start () {
         textField = GetComponentInChildren<UnityEngine.UI.Text>();
@@ -31,7 +34,7 @@ public class NotificationManager : MonoBehaviour {
         }
 	}
 
-    public void pushNotification(string text, float durationInSeconds)
+    public static void pushNotification(string text, float durationInSeconds)
     {
         textField.text = text;
         currentActiveDuration = durationInSeconds;
@@ -40,7 +43,7 @@ public class NotificationManager : MonoBehaviour {
         command.Add("position", showPosition);
         command.Add("time", transitionTimeInSeconds);
         command.Add("ignoretimescale", true);
-        iTween.MoveTo(gameObject, command);
+        iTween.MoveTo(NotificationObject, command);
         activeStartTime = Time.time;
     }
 }

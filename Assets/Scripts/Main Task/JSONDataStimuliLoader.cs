@@ -163,14 +163,14 @@ namespace JSONDataLoader
         }
     }
 
-    public class GlobalPauseDisabledStimuli : MonoBehaviour, IStimuli
+    public class GlobalPauseDisabledStimuli : IStimuli
     {
         private SystemStateMachine _stateMachine;
         private bool _stateMachineGlobalPauseEnabledValue;
 
         public GlobalPauseDisabledStimuli(bool defaultValue)
         {
-            _stateMachine = FindObjectOfType<SystemStateMachine>();
+            _stateMachine = MonoBehaviour.FindObjectOfType<SystemStateMachine>();
             _stateMachineGlobalPauseEnabledValue = defaultValue;
         }
 

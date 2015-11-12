@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using SimpleJSON;
+using System;
 
 namespace JSONDataLoader
 {
@@ -32,6 +33,12 @@ namespace JSONDataLoader
                             transitionToIndex = conditionJSON["TransitionToRelativeIndex"].AsInt;
                             transitionToIndex += taskIndex;
                         }
+
+                        if (conditionJSON["NotificationText"] != null)
+                        {
+                            string notificationText = conditionJSON["NotificationText"];
+                            return new TimeoutCondition(transitionToIndex, conditionJSON["Duration"].AsInt, notificationText);
+                        }
                         return new TimeoutCondition(transitionToIndex, conditionJSON["Duration"].AsInt);
                     }
                     break;
@@ -52,12 +59,19 @@ namespace JSONDataLoader
                         string[] commands = new string[commandArray.Count];
                         for (int k = 0; k < commandArray.Count; k++)
                             commands[k] = commandArray[k];
+
+                        if (conditionJSON["NotificationText"] != null)
+                        {
+                            string notificationText = conditionJSON["NotificationText"];
+                            return new CommandCondition(transitionToIndex, commands, conditionJSON["Duration"].AsInt, notificationText);
+                        }
+
                         return new CommandCondition(transitionToIndex, commands, conditionJSON["Duration"].AsInt);
                     }
                     break;
                 case "CumulativeInputCommand":
                     if (conditionJSON["Duration"] == null || conditionJSON["CommandNames"] == null)
-                        Debug.LogWarning("Warning: There was a problem loading the command condition in event " + taskIndex + " condition " + conditionIndex + ". Skipping...");
+                        Debug.LogWarning("Warning: There was a problem loading the cumulative command condition in event " + taskIndex + " condition " + conditionIndex + ". Skipping...");
                     else
                     {
                         int? transitionToIndex = -1;
@@ -72,12 +86,22 @@ namespace JSONDataLoader
                         string[] commands = new string[commandArray.Count];
                         for (int k = 0; k < commandArray.Count; k++)
                             commands[k] = commandArray[k];
-                        return new CumulativeCommandCondition(transitionToIndex, commands, conditionJSON["Duration"].AsInt);
+                        string storageVariableName = "";
+                        if (conditionJSON["StoreValueInVariableName"] != null)
+                            storageVariableName = conditionJSON["StoreValueInVariableName"];
+
+                        if (conditionJSON["NotificationText"] != null)
+                        {
+                            string notificationText = conditionJSON["NotificationText"];
+                            return new CumulativeCommandCondition(transitionToIndex, commands, conditionJSON["Duration"].AsInt, storageVariableName, notificationText);
+                        }
+
+                        return new CumulativeCommandCondition(transitionToIndex, commands, conditionJSON["Duration"].AsInt, storageVariableName);
                     }
                     break;
                 case "ChainCondition":
                     if (conditionJSON["Conditions"] == null)
-                        Debug.LogWarning("Warning: There was a problem loading the command condition in event " + taskIndex + " condition " + conditionIndex + ". Skipping...");
+                        Debug.LogWarning("Warning: There was a problem loading the chain condition in event " + taskIndex + " condition " + conditionIndex + ". Skipping...");
                     else
                     {
                         int? transitionToIndex = -1;
@@ -92,7 +116,38 @@ namespace JSONDataLoader
                         ICondition[] subconditions = new ICondition[subconditionArray.Count];
                         for (int k = 0; k < subconditionArray.Count; k++)
                             subconditions[k] = GetConditionFromJSON(subconditionArray[k].AsObject, taskIndex, conditionIndex);
+
+                        if (conditionJSON["NotificationText"] != null)
+                        {
+                            string notificationText = conditionJSON["NotificationText"];
+                            return new ChainCondition(transitionToIndex, subconditions, notificationText);
+                        }
+
                         return new ChainCondition(transitionToIndex, subconditions);
+                    }
+                    break;
+                case "ExpressionCondition":
+                    if (conditionJSON["Expression"] == null)
+                        Debug.LogWarning("Warning: There was a problem loading the expression condition in event " + taskIndex + " condition " + conditionIndex + ". Skipping...");
+                    else
+                    {
+                        int? transitionToIndex = -1;
+                        if (conditionJSON["TransitionToIndex"] != null)
+                            transitionToIndex = conditionJSON["TransitionToIndex"].AsInt;
+                        if (conditionJSON["TransitionToRelativeIndex"] != null)
+                        {
+                            transitionToIndex = conditionJSON["TransitionToRelativeIndex"].AsInt;
+                            transitionToIndex += taskIndex;
+                        }
+                        string expression = conditionJSON["Expression"];
+
+                        if (conditionJSON["NotificationText"] != null)
+                        {
+                            string notificationText = conditionJSON["NotificationText"];
+                            return new ExpressionCondition(transitionToIndex, expression, notificationText);
+                        }
+
+                        return new ExpressionCondition(transitionToIndex, expression);
                     }
                     break;
             }
@@ -106,11 +161,20 @@ namespace JSONDataLoader
         private float _startTime;
         private float _timeout;
         private int? _transitionTarget;
+        private bool _hasNotification;
+        private string _notificationText;
 
         public TimeoutCondition(int? transitionTarget, int timeoutInMilliseconds)
         {
             _timeout = (float)timeoutInMilliseconds;
             _transitionTarget = transitionTarget;
+            _hasNotification = false;
+        }
+
+        public TimeoutCondition(int? transitionTarget, int timeoutInMilliseconds, string notificationText) : this(transitionTarget, timeoutInMilliseconds)
+        {
+            _hasNotification = true;
+            _notificationText = notificationText;
         }
 
         public void startConditionMonitoring()
@@ -126,7 +190,10 @@ namespace JSONDataLoader
         public int? isConditionMet()
         {
             if ((Time.time - _startTime) > _timeout)
+            {
+                if (_hasNotification) NotificationManager.pushNotification(_notificationText, NotificationManager.DefaultDuration);
                 return _transitionTarget;
+            }
             else return null;
         }
     }
@@ -138,6 +205,8 @@ namespace JSONDataLoader
         private float _duration;
         private string[] _watchCommands;
         private int? _transitionTarget;
+        private bool _hasNotification;
+        private string _notificationText;
 
         public CommandCondition(int? transitionTarget, string[] commands, int duration)
         {
@@ -145,6 +214,13 @@ namespace JSONDataLoader
             _duration = duration;
             _startTime = float.MaxValue;
             _transitionTarget = transitionTarget;
+            _hasNotification = false;
+        }
+
+        public CommandCondition(int? transitionTarget, string[] commands, int duration, string notificationText) : this(transitionTarget, commands, duration)
+        {
+            _hasNotification = true;
+            _notificationText = notificationText;
         }
 
         public void startConditionMonitoring()
@@ -177,7 +253,10 @@ namespace JSONDataLoader
         public int? isConditionMet()
         {
             if (_isMonitoring && ((Time.time - _startTime) >= _duration))
+            {
+                if (_hasNotification) NotificationManager.pushNotification(_notificationText, NotificationManager.DefaultDuration);
                 return _transitionTarget;
+            }
             else return null;
         }
     }
@@ -190,20 +269,42 @@ namespace JSONDataLoader
         private float _duration;
         private string[] _watchCommands;
         private int? _transitionTarget;
+        private string _storageVariableName;
+        private bool _hasNotification;
+        private string _notificationText;
 
-        public CumulativeCommandCondition(int? transitionTarget, string[] commands, int duration)
+        public CumulativeCommandCondition(int? transitionTarget, string[] commands, int duration, string storageVariableName)
         {
             _watchCommands = commands;
             _duration = duration;
+            _storageVariableName = storageVariableName.Trim();
             _previousTime = float.MaxValue;
             _transitionTarget = transitionTarget;
-            _cumulativeTime = 0f;
+            CumulativeTime = 0f;
+            _hasNotification = false;
+        }
+
+        public CumulativeCommandCondition(int? transitionTarget, string[] commands, int duration, string storageVariableName, string notificationText) : this(transitionTarget, commands, duration, storageVariableName)
+        {
+            _hasNotification = true;
+            _notificationText = notificationText;
+        }
+
+        float CumulativeTime
+        {
+            get { return _cumulativeTime; }
+            set
+            {
+                if (_storageVariableName != "")
+                    VariableEngine.SetVariable(_storageVariableName, value.ToString());
+                _cumulativeTime = value;
+            }
         }
 
         public void startConditionMonitoring()
         {
             _isMonitoring = true;
-            _cumulativeTime = 0f;
+            CumulativeTime = 0f;
             _previousTime = float.MaxValue;
         }
 
@@ -225,22 +326,87 @@ namespace JSONDataLoader
             else if (_isMonitoring && containsCommand)
             {
                 float currentTime = Time.time;
-                _cumulativeTime += currentTime - _previousTime;
+                CumulativeTime += currentTime - _previousTime;
                 _previousTime = currentTime;
             }
             else if (_isMonitoring && !containsCommand && _previousTime != float.MaxValue)
             {
-                _cumulativeTime += Time.time - _previousTime;
+                CumulativeTime += Time.time - _previousTime;
                 _previousTime = float.MaxValue;
             }
         }
 
         public int? isConditionMet()
         {
-            Debug.Log(_cumulativeTime);
-            if (_isMonitoring && _cumulativeTime >= _duration)
+            Debug.Log(CumulativeTime);
+            if (_isMonitoring && CumulativeTime >= _duration)
+            {
+                if (_hasNotification) NotificationManager.pushNotification(_notificationText, NotificationManager.DefaultDuration);
                 return _transitionTarget;
+            }
             else return null;
+        }
+    }
+
+    public class ExpressionCondition : ICondition
+    {
+        private string _expressionString;
+        private bool _isMonitoring;
+        private int? _transitionTarget;
+        private bool _hasNotification;
+        private string _notificationText;
+
+        public ExpressionCondition(int? transitionTarget, string expression)
+        {
+            _expressionString = expression;
+            _transitionTarget = transitionTarget;
+            _isMonitoring = false;
+            _hasNotification = false;
+        }
+
+        public ExpressionCondition(int? transitionTarget, string expression, string notificationText) : this(transitionTarget, expression)
+        {
+            _hasNotification = true;
+            _notificationText = notificationText;
+        }
+
+        private bool? evaluateExpressionString()
+        {
+            string newExpressionString = VariableEngine.substituteVariablesInString(_expressionString);
+            NCalc.Expression ex = new NCalc.Expression(newExpressionString);
+            Debug.Log(newExpressionString);
+            bool result = false;
+            try
+            {
+                result = (bool)ex.Evaluate();
+            }
+            catch (Exception) { return null; }
+
+            return result;
+        }
+
+        public void startConditionMonitoring()
+        {
+            _isMonitoring = true;
+        }
+        public void setConditionStatus(string[] commands)
+        {
+            //Do nothing because this condition only cares about the expression value
+        }
+
+        public int? isConditionMet()
+        {
+            if (_isMonitoring)
+            {
+                bool? result = evaluateExpressionString();
+                if (result.HasValue && result.Value)
+                {
+                    if (_hasNotification) NotificationManager.pushNotification(_notificationText, NotificationManager.DefaultDuration);
+                    return _transitionTarget;
+                }
+                else return null;
+            }
+            return null;
         }
     }
 
@@ -249,12 +415,23 @@ namespace JSONDataLoader
         private int _currentIndex;
         private ICondition[] _subconditions;
         private int? _transitionTarget;
+        private bool _hasNotification;
+        private string _notificationText;
+
         public ChainCondition(int? transitionTarget, ICondition[] subconditions)
         {
             _currentIndex = 0;
             _subconditions = subconditions;
             _transitionTarget = transitionTarget;
+            _hasNotification = false;
         }
+
+        public ChainCondition(int? transitionTarget, ICondition[] subconditions, string notificationText) : this(transitionTarget, subconditions)
+        {
+            _hasNotification = true;
+            _notificationText = notificationText;
+        }
+
         public void startConditionMonitoring()
         {
             _subconditions[_currentIndex].startConditionMonitoring();
@@ -268,7 +445,10 @@ namespace JSONDataLoader
             {
                 int nextIndex = _currentIndex + 1;
                 if (nextIndex >= _subconditions.Length)
+                {
+                    if(_hasNotification) NotificationManager.pushNotification(_notificationText, NotificationManager.DefaultDuration);
                     return _transitionTarget;
+                }
                 else
                 {
                     _subconditions[nextIndex].startConditionMonitoring();

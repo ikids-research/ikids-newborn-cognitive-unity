@@ -4,6 +4,6 @@
 		"ConditionConfigurationFiles": ["Condition1TaskConfiguration.json", "Condition2TaskConfiguration.json", "Condition3TaskConfiguration.json", "Condition4TaskConfiguration.json", "Condition5TaskConfiguration.json", "Condition6TaskConfiguration.json", "Condition7TaskConfiguration.json", "Condition8TaskConfiguration.json"]
 	}
 	"Places": {
-		"PlaceLabels": ["1. Block 1, Fam", "2. Block 1, Test 1", "3. Block 1, Test 2", "4. Block 2, Fam", "5. Block 2, Test 1", "6. Block 2, Test 2"],
-		"PlaceStateIndicies": [0, 1, 2, 3, 4, 5]
+		"PlaceLabels": ["1. Block 1, Hab", "2. Block 1, Test 1", "3. Block 1, Test 2", "4. Block 2, Hab", "5. Block 2, Test 1", "6. Block 2, Test 2"],
+		"PlaceStateIndicies": [6, 33, 37, 47, 74, 78]
 	}
