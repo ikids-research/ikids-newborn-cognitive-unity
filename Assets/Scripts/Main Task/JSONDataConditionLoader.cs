@@ -191,6 +191,7 @@ namespace JSONDataLoader
         {
             if ((Time.time - _startTime) > _timeout)
             {
+                DataLogger.Log.LogState("Timeout condition met with Timeout=" + _timeout);
                 if (_hasNotification) NotificationManager.pushNotification(_notificationText, NotificationManager.DefaultDuration);
                 return _transitionTarget;
             }
@@ -254,6 +255,7 @@ namespace JSONDataLoader
         {
             if (_isMonitoring && ((Time.time - _startTime) >= _duration))
             {
+                DataLogger.Log.LogState("Command condition met with Duration=" + _duration);
                 if (_hasNotification) NotificationManager.pushNotification(_notificationText, NotificationManager.DefaultDuration);
                 return _transitionTarget;
             }
@@ -341,6 +343,7 @@ namespace JSONDataLoader
             Debug.Log(CumulativeTime);
             if (_isMonitoring && CumulativeTime >= _duration)
             {
+                DataLogger.Log.LogState("Cumulative command condition met with Duration=" + _duration);
                 if (_hasNotification) NotificationManager.pushNotification(_notificationText, NotificationManager.DefaultDuration);
                 return _transitionTarget;
             }
@@ -355,6 +358,7 @@ namespace JSONDataLoader
         private int? _transitionTarget;
         private bool _hasNotification;
         private string _notificationText;
+        private string _latestExpressionSubstitutionString;
 
         public ExpressionCondition(int? transitionTarget, string expression)
         {
@@ -374,6 +378,7 @@ namespace JSONDataLoader
         {
             string newExpressionString = VariableEngine.substituteVariablesInString(_expressionString);
             NCalc.Expression ex = new NCalc.Expression(newExpressionString);
+            _latestExpressionSubstitutionString = newExpressionString;
             Debug.Log(newExpressionString);
             bool result = false;
             try
@@ -401,6 +406,7 @@ namespace JSONDataLoader
                 bool? result = evaluateExpressionString();
                 if (result.HasValue && result.Value)
                 {
+                    DataLogger.Log.LogState("Expression condition met with Expression=" + _expressionString + " and Latest Expression Substitution=" + _latestExpressionSubstitutionString);
                     if (_hasNotification) NotificationManager.pushNotification(_notificationText, NotificationManager.DefaultDuration);
                     return _transitionTarget;
                 }
@@ -446,7 +452,8 @@ namespace JSONDataLoader
                 int nextIndex = _currentIndex + 1;
                 if (nextIndex >= _subconditions.Length)
                 {
-                    if(_hasNotification) NotificationManager.pushNotification(_notificationText, NotificationManager.DefaultDuration);
+                    DataLogger.Log.LogState("Chain condition met after " + _subconditions.Length + " subconditions.");
+                    if (_hasNotification) NotificationManager.pushNotification(_notificationText, NotificationManager.DefaultDuration);
                     return _transitionTarget;
                 }
                 else

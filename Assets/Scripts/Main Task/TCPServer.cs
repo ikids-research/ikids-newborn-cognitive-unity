@@ -14,13 +14,20 @@ public class TCPServer {
         _socket = new AsynchronousSocketListener(port);
         _socket.StartListening();
     }
-    public string[] getCommands()
+    public string[] getCommands(bool clearBuffer)
     {
-        int count = _socket.CommandQueue.Count;
-        string[] returnValue = new string[count];
-        for (int i = 0; i < count; i++)
-            returnValue[i] = _socket.CommandQueue.Dequeue();
-        return returnValue;
+        if (clearBuffer)
+        {
+            int count = _socket.CommandQueue.Count;
+            string[] returnValue = new string[count];
+            for (int i = 0; i < count; i++)
+                returnValue[i] = _socket.CommandQueue.Dequeue();
+            return returnValue;
+        }
+        else
+        {
+            return _socket.CommandQueue.ToArray();
+        }
     }
     public void safeShutdown()
     {

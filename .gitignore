@@ -6,7 +6,8 @@
 [Ll]ibrary/
 sysinfo.txt
 *.stackdump
- 
+ikids_newborn_cognitive_unity_log*
+
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #

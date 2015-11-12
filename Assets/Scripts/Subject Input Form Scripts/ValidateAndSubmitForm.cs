@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using System.Globalization;
 
 public class ValidateAndSubmitForm : MonoBehaviour {
 
@@ -37,6 +38,8 @@ public class ValidateAndSubmitForm : MonoBehaviour {
 
     public string babyBirthDatePlayerPrefsString = "babyBirthDate";
     public string babyBirthTimePlayerPrefsString = "babyBirthTime";
+
+    public string babyAgePlayerPrefsString = "age";
 
     public string genderPlayerPrefsString = "gender";
 
@@ -104,10 +107,18 @@ public class ValidateAndSubmitForm : MonoBehaviour {
             PlayerPrefs.SetString(babyBirthDatePlayerPrefsString, babyBirthDateInput.text);
             PlayerPrefs.SetString(babyBirthTimePlayerPrefsString, babyBirthTimeInput.text);
 
-            PlayerPrefs.SetInt(genderPlayerPrefsString, genderDropdown.value);
+            System.DateTime current = System.DateTime.ParseExact(currentDateInput.text, "dd/MM/yy", CultureInfo.InvariantCulture);
+            System.DateTime baby = System.DateTime.ParseExact(babyBirthDateInput.text, "dd/MM/yy", CultureInfo.InvariantCulture);
+            System.TimeSpan diff = (current - baby);
+            int weeks = (int)System.Math.Floor(((double)diff.TotalDays / 7.0));
+            int days = (int)(diff.TotalDays % 7);
+            PlayerPrefs.SetString(babyAgePlayerPrefsString, weeks + " weeks, " + days + " days");
+
+            PlayerPrefs.SetString(genderPlayerPrefsString, genderDropdown.options[genderDropdown.value].text);
 
             PlayerPrefs.SetString(conditionConfigurationFilenamePlayerPrefsString, conditionAndPlaceConfigurationLoader.getSelectedCondition());
-            PlayerPrefs.SetInt(placeNumberPlayerPrefsString, conditionAndPlaceConfigurationLoader.getSelectedPlace());
+            int place = conditionAndPlaceConfigurationLoader.getSelectedPlace();
+            PlayerPrefs.SetInt(placeNumberPlayerPrefsString, place);
 
             Application.LoadLevel(transitionSceneNumber);
         }
@@ -123,5 +134,5 @@ public class ValidateAndSubmitForm : MonoBehaviour {
         iTween.RotateTo(currentTimeInput.gameObject, Vector3.zero, resetTime);
         iTween.RotateTo(babyBirthDateInput.gameObject, Vector3.zero, resetTime);
         iTween.RotateTo(babyBirthTimeInput.gameObject, Vector3.zero, resetTime);
-}
+    }
 }

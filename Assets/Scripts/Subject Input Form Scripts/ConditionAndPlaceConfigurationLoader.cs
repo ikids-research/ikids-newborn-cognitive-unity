@@ -59,6 +59,20 @@ public class ConditionAndPlaceConfigurationLoader : MonoBehaviour {
         }
         for (int i = 0; i < placeStateIndiciesJSON.Count; i++)
             placeStateIndicies[i] = placeStateIndiciesJSON[i];
+
+        Text[] placeTexts = placeDropDown.GetComponentsInChildren<Text>();
+        Text placeText = placeTexts[0];
+        for (int i = 0; i < placeTexts.Length; i++)
+            if (placeTexts[i].text == "initme")
+                placeText = placeTexts[i];
+        placeText.text = placeLabels[0];
+
+        Text[] conditionTexts = conditionDropDown.GetComponentsInChildren<Text>();
+        Text conditionText = conditionTexts[0];
+        for (int i = 0; i < conditionTexts.Length; i++)
+            if (conditionTexts[i].text == "initme")
+                conditionText = conditionTexts[i];
+        conditionText.text = conditionLabels[0];
     }
 
     public string getSelectedCondition()

@@ -105,7 +105,6 @@ namespace JSONDataLoader
                     int minParams = int.MaxValue;
                     for (int j = 0; j < subParameters.Count; j++)
                     {
-                        string parameterSubstitutionString = subParameters[j]["ParameterSubstitutionString"];
                         JSONArray parameterValues = subParameters[j]["ParameterValues"].AsArray;
                         if (parameterValues.Count < minParams)
                             minParams = parameterValues.Count;

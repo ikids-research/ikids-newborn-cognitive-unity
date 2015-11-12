@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using JSONDataLoader;
+using System;
 
 public class ThreePhaseController {
 
@@ -16,7 +17,7 @@ public class ThreePhaseController {
 	public string[] getMasterInterfaceCommands()
     {
         if (_interfaces.MasterInterface == InterfaceConfiguration.InterfaceType.TCP)
-            return getTCPInterfaceCommands();
+            return getTCPInterfaceCommands(true);
         else if (_interfaces.MasterInterface == InterfaceConfiguration.InterfaceType.Keyboard)
             return getKeyboardCommands();
         else if (_interfaces.MasterInterface == InterfaceConfiguration.InterfaceType.XBoxController)
@@ -50,9 +51,9 @@ public class ThreePhaseController {
         return new string[0];
     }
 
-    public string[] getTCPInterfaceCommands()
+    public string[] getTCPInterfaceCommands(bool clearBuffer)
     {
-        return _tcpServer.getCommands();
+        return _tcpServer.getCommands(clearBuffer);
     }
 
     public void safeShutdown()
