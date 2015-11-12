@@ -23,14 +23,14 @@ Loading C:\Users\Kevin\Documents\GitHub\ikids-newborn-cognitive-unity\Builds\Bui
 Platform assembly: C:\Users\Kevin\Documents\GitHub\ikids-newborn-cognitive-unity\Builds\Build 0\Loader_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
 Loading C:\Users\Kevin\Documents\GitHub\ikids-newborn-cognitive-unity\Builds\Build 0\Loader_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
 Platform assembly: C:\Users\Kevin\Documents\GitHub\ikids-newborn-cognitive-unity\Builds\Build 0\Loader_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.057 seconds
+- Completed reload, in  0.053 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 3200x1080 at 0,0
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Kevin\Documents\GitHub\ikids-newborn-cognitive-unity\Builds\Build 0\Loader_Data\Managed\System.dll (this message is harmless)
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 15e18 -> priority: 1 
+  Thread -> id: 16074 -> priority: 1 
 Generating Test Inputs...
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -40,10 +40,14 @@ Valid inputs. Submitting and transitioning.
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.160550 ms
+UnloadTime: 3.739454 ms
 
 Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 290.
-Total: 0.487203 ms (FindLiveObjects: 0.050712 ms CreateObjectMapping: 0.027469 ms MarkObjects: 0.383363 ms  DeleteObjects: 0.024148 ms)
+Total: 0.224584 ms (FindLiveObjects: 0.021130 ms CreateObjectMapping: 0.017206 ms MarkObjects: 0.173871 ms  DeleteObjects: 0.012074 ms)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
@@ -117,6 +121,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_1.png - 0.6353839%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_1.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -129,7 +137,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_2.png - 0.4828511%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_2.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -145,7 +153,15 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/00BabyLook.wav - 0.6964692%
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/00BabyLook.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/00BabyLook.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/00BabyLook.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -161,11 +177,15 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/1-pair-old-face[6X8in].png - 0.1608621%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/1-pair-old-face[6X8in].png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/1-pair-old-face[6X8in].png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/salmon.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -285,7 +305,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_1.png - 0.51023%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_1.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -301,11 +321,23 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_2.png - 0.3139276%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_2.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_2.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/01Cuckoo.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/01Cuckoo.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/01Cuckoo.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -353,7 +385,15 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/1-pair-young-face[6X8in].png - 0.05420365%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/1-pair-young-face[6X8in].png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/salmon.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -461,7 +501,19 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image2_2.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image2_2.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/02HeyCutie.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/02HeyCutie.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -485,7 +537,15 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Familiar.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Familiar.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Novel.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -581,6 +641,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image3_1.png - 0.02834184%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image3_1.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -597,7 +661,23 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image3_2.png - 0.7825096%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image3_2.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/03SweetiePie.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/03SweetiePie.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/03SweetiePie.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -645,10 +725,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -698,10 +774,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -753,6 +825,14 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/04UpAndDown.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/04UpAndDown.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading audio assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/04UpAndDown.wav.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -778,10 +858,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Novel.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -841,15 +917,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -873,7 +941,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image5_1.png - 0.5085411%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image5_1.png - 0.02676532%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -889,6 +957,14 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image5_2.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image5_2.png - 0.7961295%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image5_2.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -898,6 +974,18 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/05PeekAboo.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/05PeekAboo.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/05PeekAboo.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/05PeekAboo.wav - 0.1857251%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -937,10 +1025,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -989,10 +1073,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 1%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -1005,15 +1085,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image6_1.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1037,6 +1109,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image6_2.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image6_2.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -1049,7 +1125,15 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/06LookKiddo.wav - 0.4178815%
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/06LookKiddo.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/06LookKiddo.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/06LookKiddo.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1161,10 +1245,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image7_1.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image7_1.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -1193,7 +1273,15 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/07KittyCat.wav - 0.7893319%
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/07KittyCat.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/07KittyCat.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/07KittyCat.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1233,6 +1321,14 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -1250,22 +1346,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 1%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1297,19 +1377,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1345,6 +1413,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image8_2.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image8_2.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -1357,15 +1429,15 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/08TickTock.wav - 0.7893319%
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/08TickTock.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/08TickTock.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading audio assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/08TickTock.wav.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Familiar.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1445,7 +1517,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 1%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1470,10 +1542,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_1.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_1.png - 0.8970125%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1489,6 +1557,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_2.png - 0.6897873%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_2.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -1501,7 +1573,7 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/00BabyLook.wav - 0%
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/00BabyLook.wav - 0.7893319%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1530,10 +1602,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Familiar.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1629,7 +1697,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_2.png - 0.03139276%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_2.png - 0.09417827%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1642,6 +1710,10 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/01Cuckoo.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/01Cuckoo.wav - 0.325019%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1706,6 +1778,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B1TA.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1765,6 +1841,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image2_2.png - 0.438893%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image2_2.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -1813,10 +1893,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -1886,6 +1962,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B1TB.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B1TB.png - 1%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1937,6 +2017,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image3_2.png - 0.4291182%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image3_2.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -1949,7 +2033,7 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/03SweetiePie.wav - 0.04643128%
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/03SweetiePie.wav - 0.1857251%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1961,7 +2045,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/1-pair-young-face[6X8in].png - 0.5962402%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/1-pair-young-face[6X8in].png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -1989,11 +2073,11 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/1-pair-young-face[6X8in].png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2109,10 +2193,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_2.png - 0.1724468%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_2.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -2122,6 +2202,10 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/00BabyLook.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/00BabyLook.wav - 0.3714503%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2193,6 +2277,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -2201,7 +2289,15 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B2C.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2245,10 +2341,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_1.png - 0.02429667%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_1.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -2261,6 +2353,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_2.png - 0.5022841%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_2.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -2270,6 +2366,10 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/01Cuckoo.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/01Cuckoo.wav - 0.5571754%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2321,10 +2421,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/salmon.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/salmon.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -2337,18 +2433,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -2374,10 +2458,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B2H.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2473,11 +2553,15 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Novel.png - 0%
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Novel.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Novel.png.
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2561,10 +2645,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image3_1.png - 0.7368878%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image3_1.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -2593,7 +2673,7 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/03SweetiePie.wav - 0%
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/03SweetiePie.wav - 0.6964692%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2633,15 +2713,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 1%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2666,10 +2738,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B2H.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2682,6 +2750,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B2H.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2729,6 +2801,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image4_2.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image4_2.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -2741,7 +2817,11 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/04UpAndDown.wav - 1%
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/04UpAndDown.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/04UpAndDown.wav - 0.8821944%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2769,19 +2849,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Novel.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Novel.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Novel.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2841,6 +2909,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -2862,6 +2934,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image5_1.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image5_1.png - 0.1605919%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2877,7 +2953,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image5_2.png - 0.1372637%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image5_2.png - 0.02745274%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2890,6 +2966,10 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/05PeekAboo.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/05PeekAboo.wav - 0.2321564%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -2917,6 +2997,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Familiar.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Familiar.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -2930,10 +3014,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3017,11 +3097,11 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image6_2.png - 0%
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image6_2.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image6_2.png.
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/06LookKiddo.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3081,6 +3161,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -3094,10 +3178,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B2H.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3145,10 +3225,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image7_1.png - 0.5623578%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image7_1.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -3158,6 +3234,14 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image7_2.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image7_2.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image7_2.png - 0.02908666%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3173,7 +3257,11 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/07KittyCat.wav - 0.650038%
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/07KittyCat.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/07KittyCat.wav - 0.9286257%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3190,6 +3278,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Novel.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Familiar.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3225,6 +3317,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -3233,7 +3329,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 1%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3313,6 +3409,14 @@ Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/08TickTock.wav - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/08TickTock.wav - 0.9750569%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading audio assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/08TickTock.wav.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -3338,10 +3442,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/Pattern_Novel.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3385,7 +3485,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B2H.png - 1%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B2H.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3425,10 +3525,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_1.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_1.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -3441,7 +3537,19 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_2.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_2.png - 0.2759149%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image0_2.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/00BabyLook.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3525,7 +3633,15 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B2H.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B2H.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3557,7 +3673,11 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_1.png - 0.02429667%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_1.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_1.png - 0.09718667%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3573,7 +3693,7 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_2.png - 0.7220334%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image1_2.png - 0.5964624%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3665,6 +3785,10 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B2TA.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/B2TA.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -3677,18 +3801,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -3697,7 +3809,15 @@ Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_New
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image2_1.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3721,11 +3841,11 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image2_2.png - 0%
+Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image2_2.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image2_2.png.
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/02HeyCutie.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3761,10 +3881,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/1-pair-young-face[6X8in].png - 0%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/1-pair-young-face[6X8in].png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -3773,7 +3889,19 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/blank.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/1-pair-old-face[6X8in].png - 0%
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/1-pair-old-face[6X8in].png - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3877,10 +4005,6 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image3_1.png - 0.6518623%
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image3_1.png.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -3893,11 +4017,15 @@ Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image3_2.png - 0%
+Loading visual asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image3_2.png - 0.7572674%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Done loading visual assetfile:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/att_image3_2.png.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Loading audio asset file:///C:/Users/Kevin/AppData/LocalLow/iKids/iKids_Newborn_Cognitive_Unity/Stimuli/03SweetiePie.wav - 0%
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -3994,846 +4122,6 @@ JSONDataLoader.TimeoutCondition
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 Task Complete; Transition To -1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-JSONDataLoader.CommandCondition
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Task Complete; Transition To -1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Issuing Command : up
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 

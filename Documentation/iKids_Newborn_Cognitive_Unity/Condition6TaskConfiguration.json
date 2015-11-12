@@ -162,8 +162,8 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center - Bright Colored Box",
@@ -205,8 +205,8 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center - Attention Grabber Image",
@@ -266,8 +266,8 @@
                     ],
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931,
+                    "Width":600,
+                    "Height":934,
                     "TimePerImage":1,
                     "Loop":true
                   },
@@ -397,49 +397,6 @@
                   {  
                     "ConditionType":"Timeout",
                     "Duration":1
-                  }
-                ],
-                "State":[  
-                  {  
-                    "_comment":"Left",
-                    "StateType":"DisplayImage",
-                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
-                    "X":124,
-                    "Y":64,
-                    "Width":600,
-                    "Height":934
-                  },
-                  {  
-                    "_comment":"Right",
-                    "StateType":"DisplayImage",
-                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
-                    "X":1253,
-                    "Y":67,
-                    "Width":597,
-                    "Height":931
-                  },
-                  {  
-                    "_comment":"Center - Bright Colored Box",
-                    "StateType":"DisplayImage",
-                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\B1H.png",
-                    "X":799,
-                    "Y":654,
-                    "Width":357,
-                    "Height":343
-                  }
-                ]
-              }
-            },
-            {  
-              "_comment":"Habituation Phase - Attention Grabber",
-              "ConditionalEvent":{  
-                "EndConditions":[  
-                  {  
-                    "ConditionType":"InputCommand",
-                    "CommandNames":[  
-                      "up"
-                    ],
-                    "Duration":2
                   },
                   {  
                     "ConditionType":"ExpressionCondition",
@@ -465,8 +422,51 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
+                  },
+                  {  
+                    "_comment":"Center - Bright Colored Box",
+                    "StateType":"DisplayImage",
+                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\B1H.png",
+                    "X":799,
+                    "Y":654,
+                    "Width":357,
+                    "Height":343
+                  }
+                ]
+              }
+            },
+            {  
+              "_comment":"Habituation Phase - Attention Grabber",
+              "ConditionalEvent":{  
+                "EndConditions":[  
+                  {  
+                    "ConditionType":"InputCommand",
+                    "CommandNames":[  
+                      "up"
+                    ],
+                    "Duration":2
+                  }
+                ],
+                "State":[  
+                  {  
+                    "_comment":"Left",
+                    "StateType":"DisplayImage",
+                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
+                    "X":124,
+                    "Y":64,
+                    "Width":600,
+                    "Height":934
+                  },
+                  {  
+                    "_comment":"Right",
+                    "StateType":"DisplayImage",
+                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
+                    "X":1253,
+                    "Y":67,
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center - Attention Grabber Image",
@@ -547,8 +547,8 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\<right_filename>",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center",
@@ -638,8 +638,8 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center - Bright Colored Box",
@@ -681,8 +681,8 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center - Attention Grabber Image",
@@ -743,8 +743,8 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\<right_filename>",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center",
@@ -786,8 +786,8 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\<right_filename>",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center",
@@ -891,13 +891,13 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center - Bright Colored Box",
                     "StateType":"DisplayImage",
-                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\B1C.png",
+                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\B2C.png",
                     "X":799,
                     "Y":654,
                     "Width":357,
@@ -934,8 +934,8 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center - Attention Grabber Image",
@@ -995,8 +995,8 @@
                     ],
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931,
+                    "Width":600,
+                    "Height":934,
                     "TimePerImage":1,
                     "Loop":true
                   },
@@ -1126,49 +1126,6 @@
                   {  
                     "ConditionType":"Timeout",
                     "Duration":1
-                  }
-                ],
-                "State":[  
-                  {  
-                    "_comment":"Left",
-                    "StateType":"DisplayImage",
-                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
-                    "X":124,
-                    "Y":64,
-                    "Width":600,
-                    "Height":934
-                  },
-                  {  
-                    "_comment":"Right",
-                    "StateType":"DisplayImage",
-                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
-                    "X":1253,
-                    "Y":67,
-                    "Width":597,
-                    "Height":931
-                  },
-                  {  
-                    "_comment":"Center - Bright Colored Box",
-                    "StateType":"DisplayImage",
-                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\B1H.png",
-                    "X":799,
-                    "Y":654,
-                    "Width":357,
-                    "Height":343
-                  }
-                ]
-              }
-            },
-            {  
-              "_comment":"Habituation Phase - Attention Grabber",
-              "ConditionalEvent":{  
-                "EndConditions":[  
-                  {  
-                    "ConditionType":"InputCommand",
-                    "CommandNames":[  
-                      "up"
-                    ],
-                    "Duration":2
                   },
                   {  
                     "ConditionType":"ExpressionCondition",
@@ -1194,8 +1151,51 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
+                  },
+                  {  
+                    "_comment":"Center - Bright Colored Box",
+                    "StateType":"DisplayImage",
+                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\B2H.png",
+                    "X":799,
+                    "Y":654,
+                    "Width":357,
+                    "Height":343
+                  }
+                ]
+              }
+            },
+            {  
+              "_comment":"Habituation Phase - Attention Grabber",
+              "ConditionalEvent":{  
+                "EndConditions":[  
+                  {  
+                    "ConditionType":"InputCommand",
+                    "CommandNames":[  
+                      "up"
+                    ],
+                    "Duration":2
+                  }
+                ],
+                "State":[  
+                  {  
+                    "_comment":"Left",
+                    "StateType":"DisplayImage",
+                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
+                    "X":124,
+                    "Y":64,
+                    "Width":600,
+                    "Height":934
+                  },
+                  {  
+                    "_comment":"Right",
+                    "StateType":"DisplayImage",
+                    "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
+                    "X":1253,
+                    "Y":67,
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center - Attention Grabber Image",
@@ -1276,8 +1276,8 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\<right_filename>",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center",
@@ -1336,8 +1336,8 @@
             {  
               "ParameterSubstitutionString":"<test_pre_attention_image>",
               "ParameterValues":[  
-                "B1TA.png",
-                "B1TB.png"
+                "B2TA.png",
+                "B2TB.png"
               ]
             }
           ],
@@ -1367,8 +1367,8 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center - Bright Colored Box",
@@ -1410,8 +1410,8 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\blank.png",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center - Attention Grabber Image",
@@ -1472,8 +1472,8 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\<right_filename>",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center",
@@ -1515,8 +1515,8 @@
                     "File":"C:\\Users\\Kevin\\AppData\\LocalLow\\iKids\\iKids_Newborn_Cognitive_Unity\\Stimuli\\<right_filename>",
                     "X":1253,
                     "Y":67,
-                    "Width":597,
-                    "Height":931
+                    "Width":600,
+                    "Height":934
                   },
                   {  
                     "_comment":"Center",
