@@ -49,6 +49,7 @@ public class SystemStateMachine : MonoBehaviour {
         log.LogConfig("Participant ID: " + PlayerPrefs.GetString("participantID"));
         log.LogConfig("Researcher Holding Baby: " + PlayerPrefs.GetString("researcherHoldingBaby"));
         log.LogConfig("Researcher Running Computer: " + PlayerPrefs.GetString("researcherRunningComputer"));
+        log.LogConfig("Researcher Second Coder: " + PlayerPrefs.GetString("researcherSecondCoder"));
         log.LogConfig("Current Date: " + PlayerPrefs.GetString("currentDate"));
         log.LogConfig("Current Time: " + PlayerPrefs.GetString("currentTime"));
         log.LogConfig("Baby Birth Date: " + PlayerPrefs.GetString("babyBirthDate"));

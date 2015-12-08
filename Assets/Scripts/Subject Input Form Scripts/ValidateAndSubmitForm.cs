@@ -9,6 +9,7 @@ public class ValidateAndSubmitForm : MonoBehaviour {
     public InputField participantIDInput;
     public InputField researcherHoldingBabyInput;
     public InputField researcherRunningComputerInput;
+    public InputField researcherSecondCoderInput;
 
     public InputField currentDateInput;
     public InputField currentTimeInput;
@@ -32,6 +33,7 @@ public class ValidateAndSubmitForm : MonoBehaviour {
     public string participantIDPlayerPrefsString = "participantID";
     public string researcherHoldingBabyPlayerPrefsString = "researcherHoldingBaby";
     public string researcherRunningComputerPlayerPrefsString = "researcherRunningComputer";
+    public string researcherSecondCoderPlayerPrefsString = "researcherSecondCoder";
 
     public string currentDatePlayerPrefsString = "currentDate";
     public string currentTimePlayerPrefsString = "currentTime";
@@ -64,6 +66,11 @@ public class ValidateAndSubmitForm : MonoBehaviour {
         if (!researcherRunningComputerInput.GetComponent<InputFieldNotEmptyEnforcer>().isValid())
         {
             iTween.PunchRotation(researcherRunningComputerInput.gameObject, punchRotationVector, punchRotationDuration);
+            allValid = false;
+        }
+        if (!researcherSecondCoderInput.GetComponent<InputFieldNotEmptyEnforcer>().isValid())
+        {
+            iTween.PunchRotation(researcherSecondCoderInput.gameObject, punchRotationVector, punchRotationDuration);
             allValid = false;
         }
 
@@ -100,15 +107,16 @@ public class ValidateAndSubmitForm : MonoBehaviour {
             PlayerPrefs.SetString(participantIDPlayerPrefsString, participantIDInput.text);
             PlayerPrefs.SetString(researcherHoldingBabyPlayerPrefsString, researcherHoldingBabyInput.text);
             PlayerPrefs.SetString(researcherRunningComputerPlayerPrefsString, researcherRunningComputerInput.text);
-
+            PlayerPrefs.SetString(researcherSecondCoderPlayerPrefsString, researcherSecondCoderInput.text);
+            
             PlayerPrefs.SetString(currentDatePlayerPrefsString, currentDateInput.text);
             PlayerPrefs.SetString(currentTimePlayerPrefsString, currentTimeInput.text);
 
             PlayerPrefs.SetString(babyBirthDatePlayerPrefsString, babyBirthDateInput.text);
             PlayerPrefs.SetString(babyBirthTimePlayerPrefsString, babyBirthTimeInput.text);
 
-            System.DateTime current = System.DateTime.ParseExact(currentDateInput.text, "dd/MM/yy", CultureInfo.InvariantCulture);
-            System.DateTime baby = System.DateTime.ParseExact(babyBirthDateInput.text, "dd/MM/yy", CultureInfo.InvariantCulture);
+            System.DateTime current = System.DateTime.ParseExact(currentDateInput.text, "MM/dd/yy", CultureInfo.InvariantCulture);
+            System.DateTime baby = System.DateTime.ParseExact(babyBirthDateInput.text, "MM/dd/yy", CultureInfo.InvariantCulture);
             System.TimeSpan diff = (current - baby);
             int weeks = (int)System.Math.Floor(((double)diff.TotalDays / 7.0));
             int days = (int)(diff.TotalDays % 7);

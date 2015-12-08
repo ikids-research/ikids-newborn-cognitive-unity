@@ -10,11 +10,13 @@ public class GenerateTestFormData : MonoBehaviour {
     public string defaultResearcherHoldingBaby = "TestResearcherHoldingBaby";
     public InputField researcherRunningComputerInput;
     public string defaultResearcherRunningComputer = "TestResearcherRunningComputer";
+    public InputField researcherSecondCoderInput;
+    public string defaultResearcherSecondCoder = "None";
 
     public InputField babyBirthDateInput;
     public string defaultBabyBirthDate = "01/01/01";
     public InputField babyBirthTimeInput;
-    public string defaultBabyBirthTime = "01:01";
+    public string defaultBabyBirthTime = "01:01 AM";
 
     public string inputObjectName = "Text";
 
@@ -24,6 +26,7 @@ public class GenerateTestFormData : MonoBehaviour {
         participantIDInput.text = defaultParticipantID;
         researcherHoldingBabyInput.text = defaultResearcherHoldingBaby;
         researcherRunningComputerInput.text = defaultResearcherRunningComputer;
+        researcherSecondCoderInput.text = defaultResearcherSecondCoder;
 
         babyBirthDateInput.text = defaultBabyBirthDate;
         babyBirthTimeInput.text = defaultBabyBirthTime;
