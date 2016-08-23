@@ -9,6 +9,7 @@ using System.Threading;
 public class TCPServer {
     public static string endOfMessageString = "*EOF*";
     private AsynchronousSocketListener _socket;
+    private string lastValue = null;
     public TCPServer(int port)
     {
         _socket = new AsynchronousSocketListener(port);
@@ -16,18 +17,21 @@ public class TCPServer {
     }
     public string[] getCommands(bool clearBuffer)
     {
+        int count = _socket.CommandQueue.Count;
+        string[] returnValue = new string[count];
+        if (count == 0 && lastValue != null) returnValue = new string[] { lastValue };
         if (clearBuffer)
         {
-            int count = _socket.CommandQueue.Count;
-            string[] returnValue = new string[count];
             for (int i = 0; i < count; i++)
                 returnValue[i] = _socket.CommandQueue.Dequeue();
-            return returnValue;
+            lastValue = returnValue[returnValue.Length - 1];
         }
         else
         {
-            return _socket.CommandQueue.ToArray();
+            returnValue = _socket.CommandQueue.ToArray();
+            lastValue = returnValue[returnValue.Length - 1];
         }
+        return returnValue;
     }
     public void safeShutdown()
     {
