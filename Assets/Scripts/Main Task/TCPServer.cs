@@ -5,11 +5,20 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
+using JSONDataLoader;
 
 public class TCPServer {
     public static string endOfMessageString = "*EOF*";
     private AsynchronousSocketListener _socket;
     private string lastValue = null;
+    private Configuration config;
+
+    public void SetConfig(Configuration c)
+    {
+        config = c;
+        _socket.SetConfig(c);
+    }
+
     public TCPServer(int port)
     {
         _socket = new AsynchronousSocketListener(port);
@@ -57,6 +66,12 @@ public class TCPServer {
         private Socket _socket;
         private int _port;
         private Queue<string> _commandQueue;
+        private Configuration config;
+
+        public void SetConfig(Configuration c)
+        {
+            config = c;
+        }
 
         public int Port
         {
@@ -152,7 +167,7 @@ public class TCPServer {
                     _commandQueue.Enqueue(command);
                     Debug.Log("Read " + content.Length + " bytes from socket. \n Data : " + content);
                     // Echo the data back to the client.
-                    Send(handler, content);
+                    Send(handler, config.TaskProcedure.Index.ToString("0000"));
                     state.sb = new StringBuilder();
                 }
                 // Not all data received. Get more.
@@ -161,7 +176,7 @@ public class TCPServer {
             }
         }
 
-        private void Send(Socket handler, String data)
+        public void Send(Socket handler, String data)
         {
             // Convert the string data to byte data using ASCII encoding.
             byte[] byteData = Encoding.ASCII.GetBytes(data);

@@ -60,4 +60,9 @@ public class ThreePhaseController {
     {
         _tcpServer.safeShutdown();
     }
+
+    public void SetConfig(Configuration c)
+    {
+        _tcpServer.SetConfig(c);
+    }
 }

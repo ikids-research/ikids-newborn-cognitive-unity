@@ -45,7 +45,7 @@ public class SystemStateMachine : MonoBehaviour {
 
         //Create a controller interface using the controller configuration from the JSON
         controller = new ThreePhaseController(config.Interfaces);
-
+        controller.SetConfig(config);
         log.LogConfig("Participant ID: " + PlayerPrefs.GetString("participantID"));
         log.LogConfig("Researcher Holding Baby: " + PlayerPrefs.GetString("researcherHoldingBaby"));
         log.LogConfig("Researcher Running Computer: " + PlayerPrefs.GetString("researcherRunningComputer"));
