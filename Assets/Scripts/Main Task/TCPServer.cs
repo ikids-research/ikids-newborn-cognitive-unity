@@ -33,12 +33,14 @@ public class TCPServer {
         {
             for (int i = 0; i < count; i++)
                 returnValue[i] = _socket.CommandQueue.Dequeue();
-            lastValue = returnValue[returnValue.Length - 1];
+            if (returnValue.Length > 0)
+                lastValue = returnValue[returnValue.Length - 1];
         }
         else
         {
             returnValue = _socket.CommandQueue.ToArray();
-            lastValue = returnValue[returnValue.Length - 1];
+            if(returnValue.Length > 0)
+                lastValue = returnValue[returnValue.Length - 1];
         }
         return returnValue;
     }
