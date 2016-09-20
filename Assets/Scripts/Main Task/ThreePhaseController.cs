@@ -16,12 +16,15 @@ public class ThreePhaseController {
 
 	public string[] getMasterInterfaceCommands()
     {
+        string[] tcpCommands = getTCPInterfaceCommands(true);
+        string[] keyboardCommands = getKeyboardCommands();
+        string[] xboxCommands = getXBoxControllerCommands();
         if (_interfaces.MasterInterface == InterfaceConfiguration.InterfaceType.TCP)
-            return getTCPInterfaceCommands(true);
+            return tcpCommands;
         else if (_interfaces.MasterInterface == InterfaceConfiguration.InterfaceType.Keyboard)
-            return getKeyboardCommands();
+            return keyboardCommands;
         else if (_interfaces.MasterInterface == InterfaceConfiguration.InterfaceType.XBoxController)
-            return getXBoxControllerCommands();
+            return xboxCommands;
         return new string[0];
     }
 
