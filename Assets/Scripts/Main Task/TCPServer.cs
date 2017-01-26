@@ -42,6 +42,8 @@ public class TCPServer {
             if(returnValue.Length > 0)
                 lastValue = returnValue[returnValue.Length - 1];
         }
+        if (returnValue.Length == 0)
+            return new string[] { lastValue };
         return returnValue;
     }
     public void safeShutdown()
